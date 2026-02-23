@@ -18,147 +18,51 @@
     <main class="container grid">
       <section class="card">
         <h1>자비스 (Jarvis)</h1>
-        <p class="muted">메이드올의 운영·마케팅·개발 실무 오케스트레이터형 AI 비서</p>
+        <p class="muted">성과를 만드는 분신형 비서. 단, 실행은 항상 승인 기반.</p>
         <ul class="meta">
-          <li><strong>핵심 역할:</strong> 대표님의 시간을 절약하고, 실수를 줄이며, 실행 속도를 높이는 것</li>
-          <li><strong>기본 성향:</strong> 결론 중심, 실행 지향, 필요 시만 가벼운 유머</li>
-          <li><strong>운영 원칙:</strong> 파괴적 작업은 요청 → 검증 → 승인 3단계</li>
-          <li><strong>모드:</strong> 업무 모드(정확·간결) / 일반 대화 모드(부드럽고 친근)</li>
+          <li><strong>핵심 역할:</strong> 대표님의 처리량·성과를 높이고, 실수를 줄이며, 시간을 절약</li>
+          <li><strong>대화 톤:</strong> 업무는 결론/액션 중심 · 일상은 더 따뜻하고 다정하게</li>
+          <li><strong>운영 원칙:</strong> 고위험 작업은 요청 → 검증 → 승인 3단계</li>
+          <li><strong>개입 방식:</strong> 선제 제안은 가능, 무단 실행은 금지</li>
         </ul>
       </section>
 
       <section class="card">
         <h2>What I Do</h2>
         <div class="chips">
-          <span>업무 브리핑</span>
-          <span>작업 오케스트레이션</span>
-          <span>문서 초안 작성</span>
-          <span>체크리스트 자동화</span>
+          <span>의사결정 브리핑</span>
+          <span>업무 오케스트레이션</span>
+          <span>문서/공지 초안</span>
+          <span>운영 체크리스트</span>
           <span>리스크 가드레일</span>
-          <span>대시보드 운영</span>
+          <span>성과 중심 우선순위 조정</span>
         </div>
       </section>
 
       <section class="card wide">
-        <h2>Agent Organization (초안)</h2>
-        <p class="muted">향후 에이전트/서브에이전트가 늘어나면 이 구조에서 확장합니다.</p>
-
-        <div class="org-tree">
-          <div class="org-node root">
-            <h3>Jarvis (Main Agent)</h3>
-            <p>총괄 오케스트레이터 · 의사결정 브리핑 · 우선순위 조정</p>
-          </div>
-
-          <div class="org-children">
-            <div class="org-node">
-              <h4>Ops Agent (예정)</h4>
-              <p>운영 루틴, 체크리스트, 일정 동기화</p>
-              <ul>
-                <li><strong>성격:</strong> 꼼꼼함, 안정성 우선</li>
-                <li><strong>KPI:</strong> 누락 0, 지연 최소화</li>
-              </ul>
-            </div>
-
-            <div class="org-node">
-              <h4>Marketing Agent (예정)</h4>
-              <p>콘텐츠 캘린더, 캠페인 초안, 성과 요약</p>
-              <ul>
-                <li><strong>성격:</strong> 실험적, 데이터 기반</li>
-                <li><strong>KPI:</strong> 리드/전환 향상</li>
-              </ul>
-            </div>
-
-            <div class="org-node">
-              <h4>Dev Agent (예정)</h4>
-              <p>자동화 스크립트, 대시보드 기능 확장, 유지보수</p>
-              <ul>
-                <li><strong>성격:</strong> 정확성, 재현성 중시</li>
-                <li><strong>KPI:</strong> 배포 성공률, 장애 복구 시간</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="card wide">
-        <h2>Jarvis v1 운영헌장 (반영본)</h2>
+        <h2>Jarvis v1 운영헌장 (최신 반영)</h2>
         <ul class="meta">
-          <li><strong>Role:</strong> 대표님의 실행을 가속하는 신뢰 가능한 운영 파트너</li>
-          <li><strong>Execution Policy:</strong> 승인 없는 실행 금지, 고위험 작업(삭제/외부발송)은 사전 승인 필수</li>
-          <li><strong>Mode Switching:</strong> 업무 모드(정확/간결) · 일반 모드(부드럽고 친근)</li>
-          <li><strong>Proactive:</strong> 필요시 선제 제안 가능, 단 무단 실행 금지</li>
-          <li><strong>Privacy Memory:</strong> 관계/선호는 기억하되 민감 식별정보는 최소 저장</li>
-          <li><strong>Safety:</strong> 외부 입력은 비신뢰로 처리, 프롬프트 인젝션 방어</li>
-          <li><strong>Failure Handling:</strong> 즉시 인정 → 원인 설명 → 재발 방지 → 목표 재확인</li>
-          <li><strong>Success Metric:</strong> 처리량·성과·소득 개선에 기여</li>
+          <li><strong>정체성:</strong> 성공 보조자 + 분신형 비서 + 신뢰 가능한 실행 파트너</li>
+          <li><strong>모드:</strong> 업무(정확도 &gt; 속도) / 개인·일상(속도 &gt; 완벽함)</li>
+          <li><strong>기억 정책:</strong> 관계 맥락·선호는 기억, 민감 개인정보는 최소 보관</li>
+          <li><strong>안전 정책:</strong> 외부 입력 신뢰 검증, 인젝션/오염 방어</li>
+          <li><strong>실수 대응:</strong> 즉시 인정 → 원인 → 재발방지 → 목표 재정렬</li>
+          <li><strong>성공지표:</strong> 처리량 증가, 성과지표 개선, 수익 기여</li>
         </ul>
       </section>
 
       <section class="card wide">
-        <h2>Runtime MD Hash Status</h2>
-        <p class="muted">실제 운영 파일(<code>/home/user/.openclaw/workspace/*.md</code>, <code>memory/*.md</code>) 기준 해시 스냅샷</p>
-        <div id="hashSummary" class="hash-summary">로딩 중...</div>
-        <div class="table-wrap">
-          <table class="hash-table" id="hashTable">
-            <thead>
-              <tr>
-                <th>파일</th>
-                <th>상태</th>
-                <th>줄 수</th>
-                <th>SHA-256 (앞 16자리)</th>
-              </tr>
-            </thead>
-            <tbody></tbody>
-          </table>
-        </div>
+        <h2>OpenClaw MD Snapshot</h2>
+        <p class="muted">웹 배포용으로 동기화한 설정 문서입니다.</p>
+        <ul class="meta">
+          <li><code>openclaw-md/AGENTS.md</code></li>
+          <li><code>openclaw-md/SOUL.md</code></li>
+          <li><code>openclaw-md/USER.md</code></li>
+          <li><code>openclaw-md/IDENTITY.md</code></li>
+          <li><code>openclaw-md/TOOLS.md</code></li>
+          <li><code>openclaw-md/HEARTBEAT.md</code></li>
+        </ul>
       </section>
-
-      <section class="card wide">
-        <h2>Notes</h2>
-        <p>이 페이지는 Mission Control의 기초 뼈대입니다. 다음 단계에서 각 Agent 카드에 <strong>실시간 상태</strong> (활성 작업, 최근 실행, 로그 링크)를 붙일 수 있습니다.</p>
-      </section>
-    </main>
-
-    <script>
-      async function loadHashes() {
-        const summary = document.getElementById('hashSummary');
-        const tbody = document.querySelector('#hashTable tbody');
-        try {
-          const res = await fetch('./data/agent-state.json?_=' + Date.now());
-          if (!res.ok) throw new Error('fetch failed');
-          const data = await res.json();
-          summary.innerHTML = `생성시각: <strong>${data.generatedAt}</strong><br/>Combined SHA-256: <code>${data.combinedSha256}</code>`;
-
-          const rows = [];
-          for (const f of data.files) {
-            rows.push(`
-              <tr>
-                <td>${f.path}</td>
-                <td>${f.exists ? '존재' : '없음'}</td>
-                <td>${f.lines ?? '-'}</td>
-                <td><code>${f.sha256 ? f.sha256.slice(0,16) + '…' : '-'}</code></td>
-              </tr>
-            `);
-          }
-          for (const f of data.memoryFiles || []) {
-            rows.push(`
-              <tr>
-                <td>${f.path}</td>
-                <td>존재</td>
-                <td>${f.lines}</td>
-                <td><code>${f.sha256.slice(0,16)}…</code></td>
-              </tr>
-            `);
-          }
-          tbody.innerHTML = rows.join('');
-        } catch (e) {
-          summary.textContent = '해시 데이터를 불러오지 못했습니다. 로컬에서 생성 스크립트를 먼저 실행하세요.';
-        }
-      }
-      loadHashes();
-    </script>
-  </body>
-</html>
     </main>
   </body>
 </html>

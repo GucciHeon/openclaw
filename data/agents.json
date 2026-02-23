@@ -1,10 +1,16 @@
 {
-  "generatedAt": "2026-02-23T15:27:07.675Z",
+  "generatedAt": "2026-02-23T15:43:39.545Z",
   "agents": [
     {
       "id": "atlas-main",
       "name": "Atlas Main",
       "type": "orchestrator",
+      "status": "active"
+    },
+    {
+      "id": "sync-worker",
+      "name": "Workspace Sync Worker",
+      "type": "sync-automation",
       "status": "active"
     },
     {
@@ -27,6 +33,23 @@
       "type": "mail-analyzer",
       "status": "active",
       "files": 6
+    }
+  ],
+  "providerSummary": [
+    {
+      "provider": "gmail",
+      "files": 7,
+      "status": "active"
+    },
+    {
+      "provider": "daum",
+      "files": 7,
+      "status": "active"
+    },
+    {
+      "provider": "naver",
+      "files": 6,
+      "status": "active"
     }
   ]
 }

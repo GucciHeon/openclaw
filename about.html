@@ -1,23 +1,21 @@
 <!doctype html>
-<html lang="ko"><head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>About Atlas | OpenClaw</title><link rel="stylesheet" href="./styles.css" /></head>
-<body>
-<header class="topbar"><div class="brand">🧭 OpenClaw Control</div><nav>
-<a href="./index.html">Home</a><a href="./about.html" class="active">About</a><a href="./task-tracker.html">Task Tracker</a><a href="./calendar.html">Calendar</a><a href="./documents.html">Documents</a>
+<html lang="ko"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Agents | OpenClaw</title><link rel="stylesheet" href="./styles.css"/></head>
+<body><header class="topbar"><div class="brand">🧭 OpenClaw Executive Dashboard</div><nav>
+<a href="./index.html">Overview</a><a class="active" href="./about.html">Agents</a><a href="./automation.html">Automation</a><a href="./task-tracker.html">Timeline</a><a href="./calendar.html">Calendar</a><a href="./documents.html">Documents</a><a href="./playbook.html">Playbook</a>
 </nav></header>
 <main class="container grid">
-<section class="card"><h1>아틀라스 (Atlas)</h1><p class="muted">성과를 만드는 분신형 비서. 실행은 승인 기반.</p>
-<ul class="meta"><li><strong>원칙:</strong> 결론·액션 중심, 고위험 작업 승인 필수</li><li><strong>기억:</strong> 관계 맥락 O / 민감 개인정보 최소화</li></ul></section>
-<section class="card"><h2>Active Agents</h2><div id="agents" class="chips"></div><p class="muted" id="agentMeta"></p></section>
-<section class="card wide"><h2>Mail Analyzer Coverage</h2><div class="table-wrap"><table class="hash-table"><thead><tr><th>Agent</th><th>Type</th><th>Status</th><th>Files</th></tr></thead><tbody id="agentRows"></tbody></table></div></section>
+<section class="card"><h1>AI 조직도</h1><p class="muted">대표님과 함께 일하는 에이전트 구조와 책임 범위</p></section>
+<section class="card half"><h2>Core Orchestrator</h2><ul class="meta"><li><strong>Atlas Main</strong> — 우선순위 조정, 의사결정 브리핑, 승인 기반 실행</li><li><strong>Sync Worker</strong> — 로컬 OpenClaw 상태를 GitHub snapshot으로 동기화</li></ul></section>
+<section class="card half"><h2>Domain Agents</h2><div id="mailChips" class="chips"></div></section>
+<section class="card"><h2>Agent Registry</h2><div class="table-wrap"><table class="hash-table"><thead><tr><th>ID</th><th>Name</th><th>Type</th><th>Status</th><th>Evidence</th></tr></thead><tbody id="rows"></tbody></table></div></section>
 </main>
 <script>
 async function load(){
- const res=await fetch('./data/agents.json?_='+Date.now()); const data=await res.json();
- const chips=document.getElementById('agents');
- chips.innerHTML=data.agents.map(a=>`<span>${a.name}</span>`).join('');
- document.getElementById('agentMeta').textContent=`생성: ${new Date(data.generatedAt).toLocaleString('ko-KR')}`;
- document.getElementById('agentRows').innerHTML=data.agents.map(a=>`<tr><td>${a.name}</td><td>${a.type}</td><td>${a.status}</td><td>${a.files ?? '-'}</td></tr>`).join('');
+ const a=await fetch('./data/agents.json?_='+Date.now()).then(r=>r.json());
+ const mail=a.agents.filter(x=>x.type==='mail-analyzer');
+ document.getElementById('mailChips').innerHTML=mail.map(m=>`<span>${m.name} (${m.files} files)</span>`).join('');
+ document.getElementById('rows').innerHTML=a.agents.map(x=>`<tr><td>${x.id}</td><td>${x.name}</td><td>${x.type}</td><td>${x.status}</td><td>${x.files??'-'}</td></tr>`).join('');
 }
 load();
 </script>

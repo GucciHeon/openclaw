@@ -1,46 +1,16 @@
 <!doctype html>
-<html lang="ko">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Calendar | OpenClaw</title>
-    <link rel="stylesheet" href="./styles.css" />
-  </head>
-  <body>
-    <header class="topbar">
-      <div class="brand">🧭 OpenClaw Control</div>
-      <nav>
-        <a href="./index.html">Home</a>
-        <a href="./about.html">About</a>
-        <a href="./task-tracker.html">Task Tracker</a>
-        <a href="./calendar.html" class="active">Calendar</a>
-        <a href="./documents.html">Documents</a>
-      </nav>
-    </header>
-
-    <main class="container grid">
-      <section class="card wide">
-        <h1>Calendar</h1>
-        <p class="muted">대표님 일정 시각화 (KST)</p>
-        <div class="table-wrap">
-          <table class="hash-table" id="calTable">
-            <thead><tr><th>시작</th><th>종료</th><th>제목</th><th>분류</th></tr></thead>
-            <tbody></tbody>
-          </table>
-        </div>
-      </section>
-    </main>
-
-    <script>
-      function fmt(t){return new Date(t).toLocaleString('ko-KR',{timeZone:'Asia/Seoul'});}      
-      async function load(){
-        const res = await fetch('./data/calendar-events.json?_=' + Date.now());
-        const data = await res.json();
-        document.querySelector('#calTable tbody').innerHTML = data.events
-          .sort((a,b)=> new Date(a.start)-new Date(b.start))
-          .map(e=>`<tr><td>${fmt(e.start)}</td><td>${fmt(e.end)}</td><td>${e.title}</td><td>${e.category||'-'}</td></tr>`).join('');
-      }
-      load();
-    </script>
-  </body>
-</html>
+<html lang="ko"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Calendar | OpenClaw</title><link rel="stylesheet" href="./styles.css"/></head>
+<body><header class="topbar"><div class="brand">🧭 OpenClaw Executive Dashboard</div><nav>
+<a href="./index.html">Overview</a><a href="./about.html">Agents</a><a href="./automation.html">Automation</a><a href="./task-tracker.html">Timeline</a><a class="active" href="./calendar.html">Calendar</a><a href="./documents.html">Documents</a><a href="./playbook.html">Playbook</a>
+</nav></header>
+<main class="container grid">
+<section class="card"><h1>Calendar</h1><p class="muted">대표님 일정 시각화 (KST)</p><div class="table-wrap"><table class="hash-table"><thead><tr><th>시작</th><th>종료</th><th>제목</th><th>분류</th></tr></thead><tbody id="rows"></tbody></table></div></section>
+</main>
+<script>
+function fmt(t){return new Date(t).toLocaleString('ko-KR',{timeZone:'Asia/Seoul'});} 
+fetch('./data/calendar-events.json?_='+Date.now()).then(r=>r.json()).then(d=>{
+ document.getElementById('rows').innerHTML=d.events.sort((a,b)=>new Date(a.start)-new Date(b.start)).map(e=>`<tr><td>${fmt(e.start)}</td><td>${fmt(e.end)}</td><td>${e.title}</td><td>${e.category||'-'}</td></tr>`).join('');
+});
+</script>
+</body></html>

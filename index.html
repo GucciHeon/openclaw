@@ -1,20 +1,39 @@
 <!doctype html>
-<html lang="ko"><head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>OpenClaw Mission Control</title><link rel="stylesheet" href="./styles.css" /></head>
-<body><header class="topbar"><div class="brand">🧭 OpenClaw Control</div><nav>
-<a href="./index.html" class="active">Home</a><a href="./about.html">About</a><a href="./task-tracker.html">Task Tracker</a><a href="./calendar.html">Calendar</a><a href="./documents.html">Documents</a>
+<html lang="ko"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>OpenClaw Executive Dashboard</title><link rel="stylesheet" href="./styles.css"/></head>
+<body>
+<header class="topbar"><div class="brand">🧭 OpenClaw Executive Dashboard</div><nav>
+<a class="active" href="./index.html">Overview</a><a href="./about.html">Agents</a><a href="./automation.html">Automation</a><a href="./task-tracker.html">Timeline</a><a href="./calendar.html">Calendar</a><a href="./documents.html">Documents</a><a href="./playbook.html">Playbook</a>
 </nav></header>
 <main class="container grid">
-<section class="card hero wide"><h1>Welcome, 대표님</h1><p>PC OpenClaw 데이터와 GitHub 배포본을 연결한 운영 대시보드입니다.</p><a class="btn" href="./about.html">상세 보기</a></section>
-<section class="card"><h2>Live Summary</h2><ul class="meta" id="summary"><li>로딩 중...</li></ul></section>
-<section class="card"><h2>Quick Links</h2><div class="chips"><span><a href="./task-tracker.html">작업 이력</a></span><span><a href="./calendar.html">일정</a></span><span><a href="./documents.html">문서 뷰어</a></span></div></section>
+<section class="card hero"><h1>대표님의 AI 조직 운영 현황</h1><p class="muted">텔레그램에서 실행하더라도, 여기서는 성장/자동화/조직 상태를 경영지표처럼 확인합니다.</p><span id="fresh" class="badge">data loading...</span>
+<div class="kpi-grid" id="kpis"></div></section>
+<section class="card half"><h2>AI 활용 성숙도</h2><p class="muted">구조·자동화·데이터추적·리포트·활동성 기반 점수</p><div id="scoreBox"></div></section>
+<section class="card half"><h2>핵심 인사이트</h2><ul class="meta" id="insights"></ul></section>
+<section class="card"><h2>조직 스냅샷</h2><div class="table-wrap"><table class="hash-table"><thead><tr><th>Agent</th><th>Type</th><th>Status</th><th>Owned Files</th></tr></thead><tbody id="agentRows"></tbody></table></div></section>
 </main>
 <script>
 async function load(){
- const [a,m]=await Promise.all([fetch('./data/agents.json?_='+Date.now()).then(r=>r.json()), fetch('./data/md-index.json?_='+Date.now()).then(r=>r.json())]);
- const active=a.agents.filter(x=>x.status==='active').length;
- const mail=a.agents.filter(x=>x.type==='mail-analyzer').length;
- document.getElementById('summary').innerHTML=`<li>활성 에이전트: <strong>${active}</strong></li><li>메일 분석 에이전트: <strong>${mail}</strong></li><li>문서 인덱스: <strong>${m.docs.length}</strong>개</li>`;
+  const [k,a,m,c] = await Promise.all([
+    fetch('./data/kpi.json?_='+Date.now()).then(r=>r.json()),
+    fetch('./data/agents.json?_='+Date.now()).then(r=>r.json()),
+    fetch('./data/md-index.json?_='+Date.now()).then(r=>r.json()),
+    fetch('./data/cron-jobs.json?_='+Date.now()).then(r=>r.json()).catch(()=>({enabled:0,total:0}))
+  ]);
+  const x=k.metrics;
+  document.getElementById('fresh').textContent = `Last Sync: ${new Date(k.generatedAt).toLocaleString('ko-KR')}`;
+  const map=[['활성 에이전트',`${x.activeAgents}/${x.totalAgents}`],['자동화 잡',x.automationJobs],['문서 인덱스',x.indexedDocs],['메일 리포트',x.mailReportDocs],['누적 커밋',x.commitsTotal],['최근7일 커밋',x.commits7d]];
+  document.getElementById('kpis').innerHTML = map.map(([l,v])=>`<div class='kpi'><div class='label'>${l}</div><div class='value'>${v}</div></div>`).join('');
+  const s=x.maturityScore;
+  const tone=s>=80?['매우 우수','ok']:s>=60?['안정 성장','ok']:['초기 구축 단계','warn'];
+  document.getElementById('scoreBox').innerHTML = `<div class='kpi'><div class='label'>Maturity Score</div><div class='value'>${s}</div></div><span class='badge ${tone[1]}'>${tone[0]}</span>`;
+  const insights=[
+    `현재 자동화 잡 ${c.enabled||0}개가 상시 동작 중입니다.`,
+    `메일 파이프라인은 Gmail/Daum/Naver 3개 채널을 커버합니다.`,
+    `문서 ${m.docs.length}개가 Git snapshot으로 추적됩니다.`
+  ];
+  document.getElementById('insights').innerHTML=insights.map(i=>`<li>${i}</li>`).join('');
+  document.getElementById('agentRows').innerHTML=a.agents.map(z=>`<tr><td>${z.name}</td><td>${z.type}</td><td>${z.status}</td><td>${z.files??'-'}</td></tr>`).join('');
 }
 load();
 </script>

@@ -1,20 +1,13 @@
 <!doctype html>
-<html lang="ko"><head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Task Tracker | OpenClaw</title><link rel="stylesheet" href="./styles.css" /></head>
-<body><header class="topbar"><div class="brand">🧭 OpenClaw Control</div><nav>
-<a href="./index.html">Home</a><a href="./about.html">About</a><a href="./task-tracker.html" class="active">Task Tracker</a><a href="./calendar.html">Calendar</a><a href="./documents.html">Documents</a>
+<html lang="ko"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Timeline | OpenClaw</title><link rel="stylesheet" href="./styles.css"/></head>
+<body><header class="topbar"><div class="brand">🧭 OpenClaw Executive Dashboard</div><nav>
+<a href="./index.html">Overview</a><a href="./about.html">Agents</a><a href="./automation.html">Automation</a><a class="active" href="./task-tracker.html">Timeline</a><a href="./calendar.html">Calendar</a><a href="./documents.html">Documents</a><a href="./playbook.html">Playbook</a>
 </nav></header>
-<main class="container grid">
-<section class="card wide"><h1>Task Tracker</h1><p class="muted">자동 동기화/배포 이력</p>
-<div id="summary" class="hash-summary">로딩 중...</div>
-<div class="table-wrap"><table class="hash-table"><thead><tr><th>시간</th><th>유형</th><th>작업</th><th>상태</th></tr></thead><tbody id="rows"></tbody></table></div>
-</section></main>
+<main class="container grid"><section class="card"><h1>Execution Timeline</h1><p class="muted">동기화/배포/데이터재생성의 이력 로그</p><div class="table-wrap"><table class="hash-table"><thead><tr><th>Time</th><th>Type</th><th>Action</th><th>Status</th></tr></thead><tbody id="rows"></tbody></table></div></section></main>
 <script>
-async function load(){
- const res=await fetch('./data/sync-log.json?_='+Date.now()); const data=await res.json();
- document.getElementById('summary').innerHTML=`총 <strong>${data.logs.length}</strong>개 · 최근 동기화 ${new Date(data.generatedAt).toLocaleString('ko-KR')}`;
- document.getElementById('rows').innerHTML=data.logs.map(t=>`<tr><td>${new Date(t.time).toLocaleString('ko-KR')}</td><td>${t.type}</td><td>${t.title}</td><td>${t.status}</td></tr>`).join('');
-}
-load();
+fetch('./data/sync-log.json?_='+Date.now()).then(r=>r.json()).then(d=>{
+ document.getElementById('rows').innerHTML=d.logs.map(x=>`<tr><td>${new Date(x.time).toLocaleString('ko-KR')}</td><td>${x.type}</td><td>${x.title}</td><td>${x.status}</td></tr>`).join('');
+});
 </script>
 </body></html>

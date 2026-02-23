@@ -1,28 +1,28 @@
 <!doctype html>
-<html lang="ko"><head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Documents Viewer | OpenClaw</title><link rel="stylesheet" href="./styles.css" /></head>
-<body><header class="topbar"><div class="brand">🧭 OpenClaw Control</div><nav>
-<a href="./index.html">Home</a><a href="./about.html">About</a><a href="./task-tracker.html">Task Tracker</a><a href="./calendar.html">Calendar</a><a href="./documents.html" class="active">Documents</a>
+<html lang="ko"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Documents | OpenClaw</title><link rel="stylesheet" href="./styles.css"/></head>
+<body><header class="topbar"><div class="brand">🧭 OpenClaw Executive Dashboard</div><nav>
+<a href="./index.html">Overview</a><a href="./about.html">Agents</a><a href="./automation.html">Automation</a><a href="./task-tracker.html">Timeline</a><a href="./calendar.html">Calendar</a><a class="active" href="./documents.html">Documents</a><a href="./playbook.html">Playbook</a>
 </nav></header>
 <main class="container grid">
-<section class="card"><h1>Documents Viewer</h1><p class="muted">하드코딩 없이 md-index 기반 목록</p><select id="docSelect"></select><button class="btn" id="loadBtn">불러오기</button></section>
-<section class="card wide"><h2>Preview</h2><pre id="preview" style="white-space:pre-wrap;max-height:600px;overflow:auto;background:#0b1426;border:1px solid #2e3d60;padding:12px;border-radius:10px"></pre></section>
+<section class="card half"><h1>Documents Viewer</h1><p class="muted">Git에 저장된 md 인덱스 기반 문서 브라우징</p><select id="docSelect"></select><button class="btn" id="loadBtn">불러오기</button></section>
+<section class="card half"><h2>Catalog</h2><ul class="meta" id="catalog"></ul></section>
+<section class="card"><h2>Content Preview</h2><pre id="preview" class="viewer"></pre></section>
 </main>
 <script>
 let docs=[];
 async function init(){
- const r=await fetch('./data/md-index.json?_='+Date.now());
- const data=await r.json(); docs=data.docs;
- const s=document.getElementById('docSelect');
- s.innerHTML=docs.map(d=>`<option value="${d.path}">${d.path} (${d.lines} lines)</option>`).join('');
+ const d=await fetch('./data/md-index.json?_='+Date.now()).then(r=>r.json()); docs=d.docs;
+ document.getElementById('docSelect').innerHTML=docs.map(x=>`<option value='${x.path}'>${x.path}</option>`).join('');
+ const byCat={}; docs.forEach(x=>{byCat[x.category]=(byCat[x.category]||0)+1;});
+ document.getElementById('catalog').innerHTML=Object.entries(byCat).map(([k,v])=>`<li>${k}: ${v}개</li>`).join('');
  loadDoc();
 }
 async function loadDoc(){
  const p=document.getElementById('docSelect').value;
- const r=await fetch('./openclaw-data/'+p+'?_='+Date.now());
- document.getElementById('preview').textContent=await r.text();
+ const t=await fetch('./openclaw-data/'+p+'?_='+Date.now()).then(r=>r.text());
+ document.getElementById('preview').textContent=t;
 }
-document.getElementById('loadBtn').onclick=loadDoc;
-init();
+document.getElementById('loadBtn').onclick=loadDoc; init();
 </script>
 </body></html>

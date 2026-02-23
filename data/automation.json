@@ -1,0 +1,28 @@
+{
+  "generatedAt": "2026-02-23T15:43:39.545Z",
+  "pipelines": [
+    {
+      "id": "workspace-sync",
+      "name": "Workspace → GitHub Sync",
+      "status": "active",
+      "frequency": "30m",
+      "output": [
+        "openclaw-data/*",
+        "data/md-index.json",
+        "data/agents.json",
+        "data/kpi.json"
+      ]
+    },
+    {
+      "id": "mail-intel",
+      "name": "Mail Intelligence Pipeline",
+      "status": "active",
+      "frequency": "AM/PM batch",
+      "output": [
+        "mail_reports/titles/*",
+        "mail_reports/requests/*",
+        "mail_reports/details/*"
+      ]
+    }
+  ]
+}

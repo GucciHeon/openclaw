@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Automation | OpenClaw</title><link rel="stylesheet" href="./styles.css"/></head>
+<body><header class="topbar"><div class="brand">🧭 OpenClaw Executive Dashboard</div><nav>
+<a href="./index.html">Overview</a><a href="./about.html">Agents</a><a class="active" href="./automation.html">Automation</a><a href="./task-tracker.html">Timeline</a><a href="./calendar.html">Calendar</a><a href="./documents.html">Documents</a><a href="./playbook.html">Playbook</a>
+</nav></header>
+<main class="container grid">
+<section class="card"><h1>Automation Map</h1><p class="muted">자동화 파이프라인, 스케줄 구조, 산출물 현황</p><span id="jobBadge" class="badge">loading...</span></section>
+<section class="card"><h2>Pipelines</h2><div class="table-wrap"><table class="hash-table"><thead><tr><th>Pipeline</th><th>Status</th><th>Frequency</th><th>Outputs</th></tr></thead><tbody id="pipeRows"></tbody></table></div></section>
+<section class="card half"><h2>Cron Job Groups</h2><ul class="meta" id="groups"></ul></section>
+<section class="card half"><h2>Highlights</h2><ul class="meta" id="highlights"></ul></section>
+</main>
+<script>
+async function load(){
+  const [auto,cron]=await Promise.all([
+    fetch('./data/automation.json?_='+Date.now()).then(r=>r.json()),
+    fetch('./data/cron-jobs.json?_='+Date.now()).then(r=>r.json())
+  ]);
+  document.getElementById('jobBadge').textContent=`Enabled Jobs: ${cron.enabled}/${cron.total}`;
+  document.getElementById('pipeRows').innerHTML=auto.pipelines.map(p=>`<tr><td>${p.name}</td><td>${p.status}</td><td>${p.frequency}</td><td>${p.output.join('<br/>')}</td></tr>`).join('');
+  document.getElementById('groups').innerHTML=(cron.groups||[]).map(g=>`<li>${g.name}: <strong>${g.count}</strong></li>`).join('');
+  document.getElementById('highlights').innerHTML=(cron.highlight||[]).map(h=>`<li>${h}</li>`).join('');
+}
+load();
+</script>
+</body></html>

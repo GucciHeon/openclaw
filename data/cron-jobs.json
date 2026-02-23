@@ -1,0 +1,20 @@
+{
+  "generatedAt": "2026-02-24T00:45:00+09:00",
+  "source": "openclaw cron list snapshot",
+  "total": 19,
+  "enabled": 19,
+  "groups": [
+    {"name": "mail-workers-am", "count": 3},
+    {"name": "mail-workers-pm", "count": 3},
+    {"name": "mail-details-am", "count": 3},
+    {"name": "mail-details-pm", "count": 3},
+    {"name": "mail-managers", "count": 4},
+    {"name": "workspace-sync", "count": 1},
+    {"name": "other", "count": 2}
+  ],
+  "highlight": [
+    "sync-openclaw-workspace-to-github",
+    "mail-manager:am:final-report",
+    "mail-manager:pm:final-report"
+  ]
+}

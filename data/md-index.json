@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-02-23T17:28:08.549Z",
+  "generatedAt": "2026-02-23T17:58:09.570Z",
   "root": "openclaw-data",
   "docs": [
     {
@@ -7,91 +7,91 @@
       "title": "AGENTS.md - Your Workspace",
       "category": "core",
       "lines": 213,
-      "updatedAt": "2026-02-23T17:28:08.507Z"
+      "updatedAt": "2026-02-23T17:58:09.520Z"
     },
     {
       "path": "HEARTBEAT.md",
       "title": "HEARTBEAT.md",
       "category": "core",
       "lines": 6,
-      "updatedAt": "2026-02-23T17:28:08.507Z"
+      "updatedAt": "2026-02-23T17:58:09.520Z"
     },
     {
       "path": "IDENTITY.md",
       "title": "IDENTITY.md - Who Am I?",
       "category": "core",
       "lines": 28,
-      "updatedAt": "2026-02-23T17:28:08.507Z"
+      "updatedAt": "2026-02-23T17:58:09.520Z"
     },
     {
       "path": "mail_reports/daum-am.md",
       "title": "Daum 메일 점검 보고 (am)",
       "category": "mail_reports",
       "lines": 25,
-      "updatedAt": "2026-02-23T17:28:08.507Z"
+      "updatedAt": "2026-02-23T17:58:09.520Z"
     },
     {
       "path": "mail_reports/details/daum-am.md",
       "title": "daum AM 상세 요약",
       "category": "mail_reports",
       "lines": 6,
-      "updatedAt": "2026-02-23T17:28:08.507Z"
+      "updatedAt": "2026-02-23T17:58:09.520Z"
     },
     {
       "path": "mail_reports/details/daum-pm.md",
       "title": "mail_reports/details/daum-pm.md",
       "category": "mail_reports",
       "lines": 4,
-      "updatedAt": "2026-02-23T17:28:08.507Z"
+      "updatedAt": "2026-02-23T17:58:09.520Z"
     },
     {
       "path": "mail_reports/details/gmail-am.md",
       "title": "gmail AM 상세 요약",
       "category": "mail_reports",
       "lines": 6,
-      "updatedAt": "2026-02-23T17:28:08.507Z"
+      "updatedAt": "2026-02-23T17:58:09.520Z"
     },
     {
       "path": "mail_reports/details/gmail-pm.md",
       "title": "mail_reports/details/gmail-pm.md",
       "category": "mail_reports",
       "lines": 3,
-      "updatedAt": "2026-02-23T17:28:08.507Z"
+      "updatedAt": "2026-02-23T17:58:09.520Z"
     },
     {
       "path": "mail_reports/details/naver-am.md",
       "title": "naver AM 상세 요약",
       "category": "mail_reports",
       "lines": 6,
-      "updatedAt": "2026-02-23T17:28:08.507Z"
+      "updatedAt": "2026-02-23T17:58:09.520Z"
     },
     {
       "path": "mail_reports/details/naver-pm.md",
       "title": "네이버 메일 본문+스레드 추적 요약 (PM)",
       "category": "mail_reports",
       "lines": 13,
-      "updatedAt": "2026-02-23T17:28:08.507Z"
+      "updatedAt": "2026-02-23T17:58:09.520Z"
     },
     {
       "path": "mail_reports/gmail-am.md",
       "title": "Gmail AM 리포트",
       "category": "mail_reports",
       "lines": 38,
-      "updatedAt": "2026-02-23T17:28:08.507Z"
+      "updatedAt": "2026-02-23T17:58:09.520Z"
     },
     {
       "path": "mail_reports/manager/am-delete-candidates.md",
       "title": "AM 삭제 승인 대기 목록",
       "category": "mail_reports",
       "lines": 7,
-      "updatedAt": "2026-02-23T17:28:08.507Z"
+      "updatedAt": "2026-02-23T17:58:09.520Z"
     },
     {
       "path": "mail_reports/manager/am-final-report.md",
       "title": "AM 최종 통합 보고 (orchestrator)",
       "category": "mail_reports",
       "lines": 43,
-      "updatedAt": "2026-02-23T17:28:08.507Z"
+      "updatedAt": "2026-02-23T17:58:09.528Z"
     },
     {
       "path": "mail_reports/manager/pm-delete-candidates.md",
@@ -147,63 +147,63 @@
       "title": "Daum INBOX UNSEEN 제목 스크랩 (AM)",
       "category": "mail_reports",
       "lines": 11,
-      "updatedAt": "2026-02-23T17:28:08.511Z"
+      "updatedAt": "2026-02-23T17:58:09.528Z"
     },
     {
       "path": "mail_reports/titles/daum-pm.md",
       "title": "Daum UNSEEN 제목 스크랩 (PM)",
       "category": "mail_reports",
       "lines": 11,
-      "updatedAt": "2026-02-23T17:28:08.511Z"
+      "updatedAt": "2026-02-23T17:58:09.528Z"
     },
     {
       "path": "mail_reports/titles/gmail-am.md",
       "title": "gmail AM 제목 스크랩",
       "category": "mail_reports",
       "lines": 11,
-      "updatedAt": "2026-02-23T17:28:08.511Z"
+      "updatedAt": "2026-02-23T17:58:09.528Z"
     },
     {
       "path": "mail_reports/titles/gmail-pm.md",
       "title": "mail_reports/titles/gmail-pm.md",
       "category": "mail_reports",
       "lines": 5,
-      "updatedAt": "2026-02-23T17:28:08.511Z"
+      "updatedAt": "2026-02-23T17:58:09.528Z"
     },
     {
       "path": "mail_reports/titles/naver-am.md",
       "title": "naver AM 제목 수집",
       "category": "mail_reports",
       "lines": 10,
-      "updatedAt": "2026-02-23T17:28:08.511Z"
+      "updatedAt": "2026-02-23T17:58:09.528Z"
     },
     {
       "path": "mail_reports/titles/naver-pm.md",
       "title": "NAVER PM 미확인 메일 제목 스크랩",
       "category": "mail_reports",
       "lines": 13,
-      "updatedAt": "2026-02-23T17:28:08.511Z"
+      "updatedAt": "2026-02-23T17:58:09.528Z"
     },
     {
       "path": "SOUL.md",
       "title": "SOUL.md - Who You Are",
       "category": "core",
       "lines": 40,
-      "updatedAt": "2026-02-23T17:28:08.507Z"
+      "updatedAt": "2026-02-23T17:58:09.520Z"
     },
     {
       "path": "TOOLS.md",
       "title": "TOOLS.md - Local Notes",
       "category": "core",
       "lines": 41,
-      "updatedAt": "2026-02-23T17:28:08.507Z"
+      "updatedAt": "2026-02-23T17:58:09.520Z"
     },
     {
       "path": "USER.md",
       "title": "USER.md - About Your Human",
       "category": "core",
       "lines": 29,
-      "updatedAt": "2026-02-23T17:28:08.507Z"
+      "updatedAt": "2026-02-23T17:58:09.520Z"
     }
   ]
 }

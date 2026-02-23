@@ -1,29 +1,21 @@
 <!doctype html>
-<html lang="ko">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>OpenClaw Mission Control</title>
-    <link rel="stylesheet" href="./styles.css" />
-  </head>
-  <body>
-    <header class="topbar">
-      <div class="brand">🧭 OpenClaw Control</div>
-      <nav>
-        <a href="./index.html" class="active">Home</a>
-        <a href="./about.html">About</a>
-        <a href="./task-tracker.html">Task Tracker</a>
-        <a href="./calendar.html">Calendar</a>
-        <a href="./documents.html">Documents</a>
-      </nav>
-    </header>
-
-    <main class="container">
-      <section class="card hero">
-        <h1>Welcome, 대표님</h1>
-        <p>Atlas(아틀라스) 운영 컨트롤 센터입니다. 성과 중심으로 정리하고, 실행은 항상 승인 기반으로 진행합니다.</p>
-        <a class="btn" href="./about.html">업데이트된 소개 보기</a>
-      </section>
-    </main>
-  </body>
-</html>
+<html lang="ko"><head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>OpenClaw Mission Control</title><link rel="stylesheet" href="./styles.css" /></head>
+<body><header class="topbar"><div class="brand">🧭 OpenClaw Control</div><nav>
+<a href="./index.html" class="active">Home</a><a href="./about.html">About</a><a href="./task-tracker.html">Task Tracker</a><a href="./calendar.html">Calendar</a><a href="./documents.html">Documents</a>
+</nav></header>
+<main class="container grid">
+<section class="card hero wide"><h1>Welcome, 대표님</h1><p>PC OpenClaw 데이터와 GitHub 배포본을 연결한 운영 대시보드입니다.</p><a class="btn" href="./about.html">상세 보기</a></section>
+<section class="card"><h2>Live Summary</h2><ul class="meta" id="summary"><li>로딩 중...</li></ul></section>
+<section class="card"><h2>Quick Links</h2><div class="chips"><span><a href="./task-tracker.html">작업 이력</a></span><span><a href="./calendar.html">일정</a></span><span><a href="./documents.html">문서 뷰어</a></span></div></section>
+</main>
+<script>
+async function load(){
+ const [a,m]=await Promise.all([fetch('./data/agents.json?_='+Date.now()).then(r=>r.json()), fetch('./data/md-index.json?_='+Date.now()).then(r=>r.json())]);
+ const active=a.agents.filter(x=>x.status==='active').length;
+ const mail=a.agents.filter(x=>x.type==='mail-analyzer').length;
+ document.getElementById('summary').innerHTML=`<li>활성 에이전트: <strong>${active}</strong></li><li>메일 분석 에이전트: <strong>${mail}</strong></li><li>문서 인덱스: <strong>${m.docs.length}</strong>개</li>`;
+}
+load();
+</script>
+</body></html>

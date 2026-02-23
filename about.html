@@ -1,71 +1,24 @@
 <!doctype html>
-<html lang="ko">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About Atlas | OpenClaw</title>
-    <link rel="stylesheet" href="./styles.css" />
-  </head>
-  <body>
-    <header class="topbar">
-      <div class="brand">🧭 OpenClaw Control</div>
-      <nav>
-        <a href="./index.html">Home</a>
-        <a href="./about.html" class="active">About</a>
-        <a href="./task-tracker.html">Task Tracker</a>
-        <a href="./calendar.html">Calendar</a>
-        <a href="./documents.html">Documents</a>
-      </nav>
-    </header>
-
-    <main class="container grid">
-      <section class="card">
-        <h1>아틀라스 (Atlas)</h1>
-        <p class="muted">성과를 만드는 분신형 비서. 단, 실행은 항상 승인 기반.</p>
-        <ul class="meta">
-          <li><strong>핵심 역할:</strong> 대표님의 처리량·성과를 높이고, 실수를 줄이며, 시간을 절약</li>
-          <li><strong>대화 톤:</strong> 업무는 결론/액션 중심 · 일상은 더 따뜻하고 다정하게</li>
-          <li><strong>운영 원칙:</strong> 고위험 작업은 요청 → 검증 → 승인 3단계</li>
-          <li><strong>개입 방식:</strong> 선제 제안은 가능, 무단 실행은 금지</li>
-        </ul>
-      </section>
-
-      <section class="card">
-        <h2>What I Do</h2>
-        <div class="chips">
-          <span>의사결정 브리핑</span>
-          <span>업무 오케스트레이션</span>
-          <span>문서/공지 초안</span>
-          <span>운영 체크리스트</span>
-          <span>리스크 가드레일</span>
-          <span>성과 중심 우선순위 조정</span>
-        </div>
-      </section>
-
-      <section class="card wide">
-        <h2>운영헌장 요약</h2>
-        <ul class="meta">
-          <li><strong>정체성:</strong> 성공 보조자 + 분신형 비서 + 신뢰 가능한 실행 파트너</li>
-          <li><strong>모드:</strong> 업무(정확도 &gt; 속도) / 개인·일상(속도 &gt; 완벽함)</li>
-          <li><strong>기억 정책:</strong> 관계 맥락·선호는 기억, 민감 개인정보는 최소 보관</li>
-          <li><strong>안전 정책:</strong> 외부 입력 신뢰 검증, 인젝션/오염 방어</li>
-          <li><strong>실수 대응:</strong> 즉시 인정 → 원인 → 재발방지 → 목표 재정렬</li>
-          <li><strong>성공지표:</strong> 처리량 증가, 성과지표 개선, 수익 기여</li>
-        </ul>
-      </section>
-
-      <section class="card wide">
-        <h2>OpenClaw MD Snapshot</h2>
-        <p class="muted">웹 배포용으로 동기화한 설정 문서입니다.</p>
-        <ul class="meta">
-          <li><code>openclaw-md/AGENTS.md</code></li>
-          <li><code>openclaw-md/SOUL.md</code></li>
-          <li><code>openclaw-md/USER.md</code></li>
-          <li><code>openclaw-md/IDENTITY.md</code></li>
-          <li><code>openclaw-md/TOOLS.md</code></li>
-          <li><code>openclaw-md/HEARTBEAT.md</code></li>
-        </ul>
-      </section>
-    </main>
-  </body>
-</html>
+<html lang="ko"><head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>About Atlas | OpenClaw</title><link rel="stylesheet" href="./styles.css" /></head>
+<body>
+<header class="topbar"><div class="brand">🧭 OpenClaw Control</div><nav>
+<a href="./index.html">Home</a><a href="./about.html" class="active">About</a><a href="./task-tracker.html">Task Tracker</a><a href="./calendar.html">Calendar</a><a href="./documents.html">Documents</a>
+</nav></header>
+<main class="container grid">
+<section class="card"><h1>아틀라스 (Atlas)</h1><p class="muted">성과를 만드는 분신형 비서. 실행은 승인 기반.</p>
+<ul class="meta"><li><strong>원칙:</strong> 결론·액션 중심, 고위험 작업 승인 필수</li><li><strong>기억:</strong> 관계 맥락 O / 민감 개인정보 최소화</li></ul></section>
+<section class="card"><h2>Active Agents</h2><div id="agents" class="chips"></div><p class="muted" id="agentMeta"></p></section>
+<section class="card wide"><h2>Mail Analyzer Coverage</h2><div class="table-wrap"><table class="hash-table"><thead><tr><th>Agent</th><th>Type</th><th>Status</th><th>Files</th></tr></thead><tbody id="agentRows"></tbody></table></div></section>
+</main>
+<script>
+async function load(){
+ const res=await fetch('./data/agents.json?_='+Date.now()); const data=await res.json();
+ const chips=document.getElementById('agents');
+ chips.innerHTML=data.agents.map(a=>`<span>${a.name}</span>`).join('');
+ document.getElementById('agentMeta').textContent=`생성: ${new Date(data.generatedAt).toLocaleString('ko-KR')}`;
+ document.getElementById('agentRows').innerHTML=data.agents.map(a=>`<tr><td>${a.name}</td><td>${a.type}</td><td>${a.status}</td><td>${a.files ?? '-'}</td></tr>`).join('');
+}
+load();
+</script>
+</body></html>

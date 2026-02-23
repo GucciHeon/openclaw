@@ -1,65 +1,28 @@
 <!doctype html>
-<html lang="ko">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Documents Viewer | OpenClaw</title>
-    <link rel="stylesheet" href="./styles.css" />
-  </head>
-  <body>
-    <header class="topbar">
-      <div class="brand">🧭 OpenClaw Control</div>
-      <nav>
-        <a href="./index.html">Home</a>
-        <a href="./about.html">About</a>
-        <a href="./task-tracker.html">Task Tracker</a>
-        <a href="./calendar.html">Calendar</a>
-        <a href="./documents.html" class="active">Documents</a>
-      </nav>
-    </header>
-
-    <main class="container grid">
-      <section class="card">
-        <h1>Documents Viewer</h1>
-        <p class="muted">openclaw-md 문서 조회/편집 초안 (브라우저 로컬 저장)</p>
-        <select id="docSelect"></select>
-        <button class="btn" id="loadBtn">불러오기</button>
-      </section>
-      <section class="card wide">
-        <h2>Editor</h2>
-        <textarea id="editor" style="width:100%;min-height:420px;background:#0b1426;color:#e7edf8;border:1px solid #2e3d60;border-radius:10px;padding:12px"></textarea>
-        <div class="form-row" style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap">
-          <button class="btn" id="saveLocal">로컬 저장</button>
-          <button class="btn" id="downloadBtn">파일 다운로드</button>
-        </div>
-      </section>
-    </main>
-
-    <script>
-      const docs=['AGENTS.md','SOUL.md','USER.md','IDENTITY.md','TOOLS.md','HEARTBEAT.md'];
-      const select=document.getElementById('docSelect');
-      docs.forEach(d=>{const o=document.createElement('option');o.value=d;o.textContent=d;select.appendChild(o);});
-      async function loadDoc(){
-        const f=select.value;
-        const key='docEdit:'+f;
-        const cached=localStorage.getItem(key);
-        if(cached){document.getElementById('editor').value=cached; return;}
-        const r=await fetch('./openclaw-md/'+f+'?_='+Date.now());
-        document.getElementById('editor').value=await r.text();
-      }
-      document.getElementById('loadBtn').onclick=loadDoc;
-      document.getElementById('saveLocal').onclick=()=>{
-        const f=select.value;
-        localStorage.setItem('docEdit:'+f, document.getElementById('editor').value);
-        alert('로컬 저장 완료');
-      };
-      document.getElementById('downloadBtn').onclick=()=>{
-        const f=select.value;
-        const blob=new Blob([document.getElementById('editor').value],{type:'text/markdown;charset=utf-8'});
-        const a=document.createElement('a'); a.href=URL.createObjectURL(blob); a.download=f; a.click();
-        URL.revokeObjectURL(a.href);
-      };
-      loadDoc();
-    </script>
-  </body>
-</html>
+<html lang="ko"><head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Documents Viewer | OpenClaw</title><link rel="stylesheet" href="./styles.css" /></head>
+<body><header class="topbar"><div class="brand">🧭 OpenClaw Control</div><nav>
+<a href="./index.html">Home</a><a href="./about.html">About</a><a href="./task-tracker.html">Task Tracker</a><a href="./calendar.html">Calendar</a><a href="./documents.html" class="active">Documents</a>
+</nav></header>
+<main class="container grid">
+<section class="card"><h1>Documents Viewer</h1><p class="muted">하드코딩 없이 md-index 기반 목록</p><select id="docSelect"></select><button class="btn" id="loadBtn">불러오기</button></section>
+<section class="card wide"><h2>Preview</h2><pre id="preview" style="white-space:pre-wrap;max-height:600px;overflow:auto;background:#0b1426;border:1px solid #2e3d60;padding:12px;border-radius:10px"></pre></section>
+</main>
+<script>
+let docs=[];
+async function init(){
+ const r=await fetch('./data/md-index.json?_='+Date.now());
+ const data=await r.json(); docs=data.docs;
+ const s=document.getElementById('docSelect');
+ s.innerHTML=docs.map(d=>`<option value="${d.path}">${d.path} (${d.lines} lines)</option>`).join('');
+ loadDoc();
+}
+async function loadDoc(){
+ const p=document.getElementById('docSelect').value;
+ const r=await fetch('./openclaw-data/'+p+'?_='+Date.now());
+ document.getElementById('preview').textContent=await r.text();
+}
+document.getElementById('loadBtn').onclick=loadDoc;
+init();
+</script>
+</body></html>

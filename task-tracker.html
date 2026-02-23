@@ -1,68 +1,20 @@
 <!doctype html>
-<html lang="ko">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Task Tracker | OpenClaw</title>
-    <link rel="stylesheet" href="./styles.css" />
-  </head>
-  <body>
-    <header class="topbar">
-      <div class="brand">🧭 OpenClaw Control</div>
-      <nav>
-        <a href="./index.html">Home</a>
-        <a href="./about.html">About</a>
-        <a href="./task-tracker.html" class="active">Task Tracker</a>
-        <a href="./calendar.html">Calendar</a>
-        <a href="./documents.html">Documents</a>
-      </nav>
-    </header>
-
-    <main class="container grid">
-      <section class="card wide">
-        <h1>Task Tracker</h1>
-        <p class="muted">에이전트 수행 작업 이력 추적 (자동 로그 + 수동 메모)</p>
-        <div id="summary" class="hash-summary">로딩 중...</div>
-        <div class="table-wrap">
-          <table class="hash-table" id="taskTable">
-            <thead><tr><th>시간</th><th>유형</th><th>작업</th><th>상태</th></tr></thead>
-            <tbody></tbody>
-          </table>
-        </div>
-      </section>
-
-      <section class="card wide">
-        <h2>수동 로그 추가</h2>
-        <div class="form-row"><input id="taskText" placeholder="예: 랜딩 문구 수정 요청 반영" /></div>
-        <div class="form-row">
-          <select id="taskType"><option>ops</option><option>content</option><option>dev</option><option>deploy</option></select>
-          <select id="taskStatus"><option>done</option><option>in-progress</option><option>blocked</option></select>
-          <button class="btn" id="addBtn">추가</button>
-        </div>
-      </section>
-    </main>
-
-    <script>
-      const LS_KEY = 'openclaw_manual_tasks_v1';
-      function fmt(t){return new Date(t).toLocaleString('ko-KR');}
-      async function load(){
-        const res = await fetch('./data/task-log.json?_=' + Date.now());
-        const data = await res.json();
-        const manual = JSON.parse(localStorage.getItem(LS_KEY)||'[]');
-        const all=[...manual, ...data.tasks].sort((a,b)=> new Date(b.time)-new Date(a.time));
-        document.getElementById('summary').innerHTML = `총 <strong>${all.length}</strong>개 작업 · 자동 ${data.tasks.length} / 수동 ${manual.length}`;
-        document.querySelector('#taskTable tbody').innerHTML = all.map(t=>`<tr><td>${fmt(t.time)}</td><td>${t.type}</td><td>${t.title}</td><td>${t.status}</td></tr>`).join('');
-      }
-      document.getElementById('addBtn').addEventListener('click', ()=>{
-        const title=document.getElementById('taskText').value.trim();
-        if(!title) return;
-        const list=JSON.parse(localStorage.getItem(LS_KEY)||'[]');
-        list.push({time:new Date().toISOString(), type:document.getElementById('taskType').value, title, status:document.getElementById('taskStatus').value});
-        localStorage.setItem(LS_KEY, JSON.stringify(list));
-        document.getElementById('taskText').value='';
-        load();
-      });
-      load();
-    </script>
-  </body>
-</html>
+<html lang="ko"><head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Task Tracker | OpenClaw</title><link rel="stylesheet" href="./styles.css" /></head>
+<body><header class="topbar"><div class="brand">🧭 OpenClaw Control</div><nav>
+<a href="./index.html">Home</a><a href="./about.html">About</a><a href="./task-tracker.html" class="active">Task Tracker</a><a href="./calendar.html">Calendar</a><a href="./documents.html">Documents</a>
+</nav></header>
+<main class="container grid">
+<section class="card wide"><h1>Task Tracker</h1><p class="muted">자동 동기화/배포 이력</p>
+<div id="summary" class="hash-summary">로딩 중...</div>
+<div class="table-wrap"><table class="hash-table"><thead><tr><th>시간</th><th>유형</th><th>작업</th><th>상태</th></tr></thead><tbody id="rows"></tbody></table></div>
+</section></main>
+<script>
+async function load(){
+ const res=await fetch('./data/sync-log.json?_='+Date.now()); const data=await res.json();
+ document.getElementById('summary').innerHTML=`총 <strong>${data.logs.length}</strong>개 · 최근 동기화 ${new Date(data.generatedAt).toLocaleString('ko-KR')}`;
+ document.getElementById('rows').innerHTML=data.logs.map(t=>`<tr><td>${new Date(t.time).toLocaleString('ko-KR')}</td><td>${t.type}</td><td>${t.title}</td><td>${t.status}</td></tr>`).join('');
+}
+load();
+</script>
+</body></html>

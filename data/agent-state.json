@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-02-23T14:58:59.334Z",
+  "generatedAt": "2026-02-23T15:17:55.237Z",
   "sourceRoot": "/home/user/.openclaw/workspace",
   "policy": "Hashes are computed from real runtime MD files used by Jarvis.",
-  "combinedSha256": "813bee167cfd4d7ba481bd473bd93b0d73a326c8dbfd22d86fcca6aaa3d84c87",
+  "combinedSha256": "b3313fa9564400ff2e4ce9336b604ae200ba9c3fa0f9b4907e7d07373d4887e5",
   "files": [
     {
       "path": "AGENTS.md",
@@ -28,9 +28,9 @@
     {
       "path": "IDENTITY.md",
       "exists": true,
-      "bytes": 928,
+      "bytes": 930,
       "lines": 28,
-      "sha256": "d3ccf796a726c46af318381cb638a194af47d7ffc695c8c4cc90452b3a1f2753"
+      "sha256": "020f7604732bb4c15c8abdcf51eb6dbdf1029ab1e7f4e2583e114ee4f403b9a8"
     },
     {
       "path": "HEARTBEAT.md",

@@ -1,0 +1,29 @@
+{
+  "generatedAt": "2026-02-23T15:30:00Z",
+  "tasks": [
+    {
+      "time": "2026-02-23T15:05:00Z",
+      "type": "config",
+      "title": "SOUL.md / USER.md / IDENTITY.md 일괄 업데이트",
+      "status": "done"
+    },
+    {
+      "time": "2026-02-23T15:12:00Z",
+      "type": "github",
+      "title": "레포 이름 mission-control-test → openclaw 변경",
+      "status": "done"
+    },
+    {
+      "time": "2026-02-23T15:18:00Z",
+      "type": "web",
+      "title": "소개 페이지 이름 Jarvis → Atlas 반영",
+      "status": "done"
+    },
+    {
+      "time": "2026-02-23T15:24:00Z",
+      "type": "feature",
+      "title": "Task Tracker / Calendar / Documents Viewer 페이지 추가",
+      "status": "done"
+    }
+  ]
+}

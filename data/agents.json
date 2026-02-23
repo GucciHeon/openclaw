@@ -1,0 +1,32 @@
+{
+  "generatedAt": "2026-02-23T15:27:07.675Z",
+  "agents": [
+    {
+      "id": "atlas-main",
+      "name": "Atlas Main",
+      "type": "orchestrator",
+      "status": "active"
+    },
+    {
+      "id": "mail-gmail",
+      "name": "Mail GMAIL Analyzer",
+      "type": "mail-analyzer",
+      "status": "active",
+      "files": 7
+    },
+    {
+      "id": "mail-daum",
+      "name": "Mail DAUM Analyzer",
+      "type": "mail-analyzer",
+      "status": "active",
+      "files": 7
+    },
+    {
+      "id": "mail-naver",
+      "name": "Mail NAVER Analyzer",
+      "type": "mail-analyzer",
+      "status": "active",
+      "files": 6
+    }
+  ]
+}

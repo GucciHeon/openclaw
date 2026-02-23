@@ -1,13 +1,9 @@
-# NAVER UNSEEN 제목 스크랩 (AM)
+# naver AM 제목 수집
 
-- 실행시각: 2026-02-24 00:50 KST
-- 계정 상태: **미설정**
+- 실행시각: 2026-02-24 01:14 KST
+- 상태: NAVER IMAP 미설정/접속실패
+- 필요 설정값: host/port/user/password
+- 현재값: host=imap.naver.com, port=993, user=미설정, password=미설정
 
-## A. IMAP 설정 점검
-- 결과: NAVER IMAP 자격정보(host/port/user/password) 미확인
-- 처리: 상세 조회 스킵
-
-## B. INBOX UNSEEN 스크랩
-- 스킵 사유: IMAP 미설정
-- unread_count: 확인 불가
-- 제목/발신자/일시: 수집 없음
+## INBOX UNSEEN 제목/발신자/일시
+- 수집 미실행

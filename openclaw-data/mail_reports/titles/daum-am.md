@@ -1,13 +1,10 @@
-# Daum UNSEEN 제목 스크랩 (AM)
+# Daum INBOX UNSEEN 제목 스크랩 (AM)
 
-- 실행시각: 2026-02-24 00:50 KST
-- 계정 상태: **미설정**
+- 생성시각: 2026-02-24 01:13 KST
 
-## A. IMAP 설정 점검
-- 결과: Daum IMAP 자격정보(host/port/user/password) 미확인
-- 처리: 상세 조회 스킵
+1) unread_count
+- 확인 불가 (IMAP 자격정보 미설정 또는 접근 불가)
 
-## B. INBOX UNSEEN 스크랩
-- 스킵 사유: IMAP 미설정
-- unread_count: 확인 불가
-- 제목/발신자/일시: 수집 없음
+2) 제목 목록(번호, 제목, 발신자, 일시)
+- IMAP으로만 INBOX의 UNSEEN 메일 조회를 시도했으나, 현재 세션에서 Daum IMAP 접속정보(user/password)를 확인할 수 없어 제목 스크랩을 완료하지 못했습니다.
+- 본문 조회/삭제/발송/이동은 수행하지 않았습니다.

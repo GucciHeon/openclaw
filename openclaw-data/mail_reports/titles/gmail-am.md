@@ -1,13 +1,10 @@
-# Gmail UNSEEN 제목 스크랩 (AM)
+# gmail AM 제목 스크랩
 
-- 실행시각: 2026-02-24 00:50 KST
-- 계정 상태: **미설정**
+- 실행시각: 2026-02-24 01:14 KST
+1) unread_count: 조회실패
 
-## A. IMAP 설정 점검
-- 결과: Gmail IMAP 자격정보(host/port/user/password 또는 동등 환경변수) 미확인
-- 처리: 상세 조회 스킵
+2) 제목 목록 (번호, 제목, 발신자, 일시)
+- 수집 실패: 자격정보(user/password) 미설정으로 IMAP 조회를 수행할 수 없음
 
-## B. INBOX UNSEEN 스크랩
-- 스킵 사유: IMAP 미설정
-- unread_count: 확인 불가
-- 제목/발신자/일시: 수집 없음
+- 상태: credential_missing
+- 사유: 자격정보(user/password) 미설정으로 IMAP 조회를 수행할 수 없음

@@ -95,9 +95,70 @@
       </section>
 
       <section class="card wide">
+        <h2>Runtime MD Hash Status</h2>
+        <p class="muted">실제 운영 파일(<code>/home/user/.openclaw/workspace/*.md</code>, <code>memory/*.md</code>) 기준 해시 스냅샷</p>
+        <div id="hashSummary" class="hash-summary">로딩 중...</div>
+        <div class="table-wrap">
+          <table class="hash-table" id="hashTable">
+            <thead>
+              <tr>
+                <th>파일</th>
+                <th>상태</th>
+                <th>줄 수</th>
+                <th>SHA-256 (앞 16자리)</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="card wide">
         <h2>Notes</h2>
         <p>이 페이지는 Mission Control의 기초 뼈대입니다. 다음 단계에서 각 Agent 카드에 <strong>실시간 상태</strong> (활성 작업, 최근 실행, 로그 링크)를 붙일 수 있습니다.</p>
       </section>
+    </main>
+
+    <script>
+      async function loadHashes() {
+        const summary = document.getElementById('hashSummary');
+        const tbody = document.querySelector('#hashTable tbody');
+        try {
+          const res = await fetch('./data/agent-state.json?_=' + Date.now());
+          if (!res.ok) throw new Error('fetch failed');
+          const data = await res.json();
+          summary.innerHTML = `생성시각: <strong>${data.generatedAt}</strong><br/>Combined SHA-256: <code>${data.combinedSha256}</code>`;
+
+          const rows = [];
+          for (const f of data.files) {
+            rows.push(`
+              <tr>
+                <td>${f.path}</td>
+                <td>${f.exists ? '존재' : '없음'}</td>
+                <td>${f.lines ?? '-'}</td>
+                <td><code>${f.sha256 ? f.sha256.slice(0,16) + '…' : '-'}</code></td>
+              </tr>
+            `);
+          }
+          for (const f of data.memoryFiles || []) {
+            rows.push(`
+              <tr>
+                <td>${f.path}</td>
+                <td>존재</td>
+                <td>${f.lines}</td>
+                <td><code>${f.sha256.slice(0,16)}…</code></td>
+              </tr>
+            `);
+          }
+          tbody.innerHTML = rows.join('');
+        } catch (e) {
+          summary.textContent = '해시 데이터를 불러오지 못했습니다. 로컬에서 생성 스크립트를 먼저 실행하세요.';
+        }
+      }
+      loadHashes();
+    </script>
+  </body>
+</html>
     </main>
   </body>
 </html>

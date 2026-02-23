@@ -82,6 +82,12 @@ h1, h2, h3, h4 { margin-top: 0; }
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
 }
 .grid > .card { grid-column: span 12; }
+.hash-summary { margin: 10px 0 14px; color: #cfe0ff; line-height: 1.6; }
+.table-wrap { overflow-x: auto; border: 1px solid var(--line); border-radius: 10px; }
+.hash-table { width: 100%; border-collapse: collapse; min-width: 680px; }
+.hash-table th, .hash-table td { padding: 10px 12px; border-bottom: 1px solid var(--line); text-align: left; font-size: 14px; }
+.hash-table th { color: #c9d7f3; background: #0f1a30; }
+.hash-table td code { color: #9ad8ff; }
 @media (min-width: 900px) {
   .grid > .card:not(.wide) { grid-column: span 6; }
   .grid > .card.wide { grid-column: span 12; }

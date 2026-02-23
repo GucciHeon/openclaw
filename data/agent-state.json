@@ -1,0 +1,51 @@
+{
+  "generatedAt": "2026-02-23T14:53:12.413Z",
+  "sourceRoot": "/home/user/.openclaw/workspace",
+  "policy": "Hashes are computed from real runtime MD files used by Jarvis.",
+  "combinedSha256": "872a623ff9a1e8c0036d2084c4a449d6e5554995a2b03855ccb4d910ee11f91f",
+  "files": [
+    {
+      "path": "AGENTS.md",
+      "exists": true,
+      "bytes": 7869,
+      "lines": 213,
+      "sha256": "b9a756230e062b1ee3fa5ea17b5d78fa938703938b1ce79bab6e34af41bfdbe4"
+    },
+    {
+      "path": "SOUL.md",
+      "exists": true,
+      "bytes": 1673,
+      "lines": 37,
+      "sha256": "95c467f710183b2c0397c29ec4ef886bb723671a39ee767dc4d59165f723b68f"
+    },
+    {
+      "path": "USER.md",
+      "exists": true,
+      "bytes": 801,
+      "lines": 22,
+      "sha256": "f810165e242b2e4167f710cf9567bd77bb971ed4a69b63d8f8a30c90772925d8"
+    },
+    {
+      "path": "IDENTITY.md",
+      "exists": true,
+      "bytes": 887,
+      "lines": 25,
+      "sha256": "e6bfc878ed74249815380583c4c2351833588ab84a01eb922209950d0595a370"
+    },
+    {
+      "path": "HEARTBEAT.md",
+      "exists": true,
+      "bytes": 168,
+      "lines": 6,
+      "sha256": "dac422286075ba178e9bae58154cc0ae8749a66854e438c9c58e8eb91f22c126"
+    },
+    {
+      "path": "TOOLS.md",
+      "exists": true,
+      "bytes": 860,
+      "lines": 41,
+      "sha256": "78f3e26b8625ea283c615cec291d4978da5f9f01df730628c5c42094418b8dc2"
+    }
+  ],
+  "memoryFiles": []
+}

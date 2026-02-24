@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-02-23T20:28:02.009Z",
+  "generatedAt": "2026-02-24T07:40:00.000Z",
   "pipelines": [
     {
       "id": "workspace-sync",
@@ -20,8 +20,9 @@
       "frequency": "AM/PM batch",
       "output": [
         "mail_reports/titles/*",
-        "mail_reports/requests/*",
-        "mail_reports/details/*"
+        "mail_reports/details/*",
+        "mail_reports/manager/am-final-report.md",
+        "mail_reports/manager/mail-followup-ledger.json"
       ]
     }
   ]

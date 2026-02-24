@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-02-23T20:28:02.009Z",
+  "generatedAt": "2026-02-24T07:40:00.000Z",
   "agents": [
     {
       "id": "atlas-main",
       "name": "Atlas Main",
-      "type": "orchestrator",
+      "type": "orchestrator-high",
       "status": "active"
     },
     {
@@ -14,41 +14,62 @@
       "status": "active"
     },
     {
-      "id": "mail-gmail",
-      "name": "Mail GMAIL Analyzer",
-      "type": "mail-analyzer",
+      "id": "mail-control-tower",
+      "name": "Mail Control Tower",
+      "type": "mail-orchestrator-high",
       "status": "active",
-      "files": 7
+      "files": 16
     },
     {
-      "id": "mail-daum",
-      "name": "Mail DAUM Analyzer",
-      "type": "mail-analyzer",
+      "id": "mail-gmail-collector",
+      "name": "Gmail Collector",
+      "type": "mail-collector-low",
       "status": "active",
-      "files": 7
+      "files": 5
     },
     {
-      "id": "mail-naver",
-      "name": "Mail NAVER Analyzer",
-      "type": "mail-analyzer",
+      "id": "mail-daum-collector",
+      "name": "Daum Collector",
+      "type": "mail-collector-low",
       "status": "active",
       "files": 6
+    },
+    {
+      "id": "mail-naver-collector",
+      "name": "Naver Collector",
+      "type": "mail-collector-low",
+      "status": "active",
+      "files": 5
+    },
+    {
+      "id": "mail-classifier",
+      "name": "Mail Classifier",
+      "type": "mail-classifier-low",
+      "status": "active",
+      "files": 16
+    },
+    {
+      "id": "mail-summary-manager",
+      "name": "Mail Summary Manager",
+      "type": "mail-manager-high",
+      "status": "active",
+      "files": 2
     }
   ],
   "providerSummary": [
     {
       "provider": "gmail",
-      "files": 7,
+      "files": 5,
       "status": "active"
     },
     {
       "provider": "daum",
-      "files": 7,
+      "files": 6,
       "status": "active"
     },
     {
       "provider": "naver",
-      "files": 6,
+      "files": 5,
       "status": "active"
     }
   ]

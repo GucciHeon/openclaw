@@ -6,15 +6,15 @@
 </nav></header>
 <main class="container grid">
 <section class="card"><h1>AI 조직도</h1><p class="muted">대표님과 함께 일하는 에이전트 구조와 책임 범위</p></section>
-<section class="card half"><h2>Core Orchestrator</h2><ul class="meta"><li><strong>Atlas Main</strong> — 우선순위 조정, 의사결정 브리핑, 승인 기반 실행</li><li><strong>Sync Worker</strong> — 로컬 OpenClaw 상태를 GitHub snapshot으로 동기화</li></ul></section>
-<section class="card half"><h2>Domain Agents</h2><div id="mailChips" class="chips"></div></section>
+<section class="card half"><h2>Core Orchestrator</h2><ul class="meta"><li><strong>Atlas Main (상위모델)</strong> — 우선순위 조정, 의사결정 브리핑, 승인 기반 실행</li><li><strong>Mail Control Tower (상위모델)</strong> — 메일 파이프라인 품질 게이트, 예외 처리</li><li><strong>Sync Worker</strong> — 로컬 OpenClaw 상태를 GitHub snapshot으로 동기화</li></ul></section>
+<section class="card half"><h2>Mail Subagent Layer (하위모델)</h2><div id="mailChips" class="chips"></div></section>
 <section class="card"><h2>Agent Registry</h2><div class="table-wrap"><table class="hash-table"><thead><tr><th>ID</th><th>Name</th><th>Type</th><th>Status</th><th>Evidence</th></tr></thead><tbody id="rows"></tbody></table></div></section>
 </main>
 <script>
 async function load(){
  const a=await fetch('./data/agents.json?_='+Date.now()).then(r=>r.json());
- const mail=a.agents.filter(x=>x.type==='mail-analyzer');
- document.getElementById('mailChips').innerHTML=mail.map(m=>`<span>${m.name} (${m.files} files)</span>`).join('');
+ const mail=a.agents.filter(x=>x.id.startsWith('mail-') && x.id!=='mail-control-tower');
+ document.getElementById('mailChips').innerHTML=mail.map(m=>`<span>${m.name} (${m.type})</span>`).join('');
  document.getElementById('rows').innerHTML=a.agents.map(x=>`<tr><td>${x.id}</td><td>${x.name}</td><td>${x.type}</td><td>${x.status}</td><td>${x.files??'-'}</td></tr>`).join('');
 }
 load();

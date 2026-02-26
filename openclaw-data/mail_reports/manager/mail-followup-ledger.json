@@ -1,0 +1,208 @@
+{
+  "run_at": "2026-02-26T17:31:23.049154+09:00",
+  "source": "live-imap-refetch",
+  "accounts": {
+    "daum": {
+      "error": null,
+      "unseen_count": 10,
+      "delete_candidate_count": 5,
+      "warning_count": 5
+    },
+    "gmail": {
+      "error": null,
+      "unseen_count": 8,
+      "delete_candidate_count": 3,
+      "warning_count": 5
+    }
+  },
+  "deleteCandidates": [
+    {
+      "mailbox": "daum",
+      "subject": "[스마트스토어] 주문현황을 알려드립니다.",
+      "from": "스마트스토어<smartstoreadmin_noreply@navercorp.com>",
+      "date": "Thu, 26 Feb 2026 08:13:03 +0000 (UTC)"
+    },
+    {
+      "mailbox": "daum",
+      "subject": "(광고)[KCCI . Forbes 2026 사회공헌대상] 예비 후보 선정 알림 드립니다.",
+      "from": "양동욱 <leejm207575@openxgroup.co.kr>",
+      "date": "Thu, 26 Feb 2026 11:07:50 +0900"
+    },
+    {
+      "mailbox": "daum",
+      "subject": "(광고)✨90일 전액 무료✨아직도 엑셀로 경리업무하세요? 회사 현황 체크해 보세요!",
+      "from": "\"경리나라\" <webcash.cshelp@gmail.com>",
+      "date": "Thu, 26 Feb 2026 07:46:32 +0900"
+    },
+    {
+      "mailbox": "daum",
+      "subject": "[스마트스토어] 주문현황을 알려드립니다.",
+      "from": "스마트스토어<smartstoreadmin_noreply@navercorp.com>",
+      "date": "Wed, 25 Feb 2026 08:14:10 +0000 (UTC)"
+    },
+    {
+      "mailbox": "daum",
+      "subject": "(광고) ◈ 조달 . 공공 입찰 적격, 계약이행능력심사용 기업신용평가 신청 및 제출서류 요약해서 보내 드립니다.",
+      "from": "조달 공공 입찰용 기업평가 권승민 과장<01093834469@sci.co.kr>",
+      "date": "Wed, 25 Feb 2026 15:26:08 +0900"
+    },
+    {
+      "mailbox": "gmail",
+      "subject": "Gucciheon 님, 넷플릭스의 공개 예정작을 소개합니다",
+      "from": "Netflix <info@members.netflix.com>",
+      "date": "Thu, 26 Feb 2026 08:18:27 +0000"
+    },
+    {
+      "mailbox": "gmail",
+      "subject": "Summary of failures for Google Apps Script: 전체 장부 프로젝트",
+      "from": "noreply-apps-scripts-notifications@google.com",
+      "date": "Wed, 25 Feb 2026 10:59:49 -0800"
+    },
+    {
+      "mailbox": "gmail",
+      "subject": "🥹 Are you abandoning your streak?",
+      "from": "Duolingo <hello@duolingo.com>",
+      "date": "Wed, 25 Feb 2026 10:56:04 +0000"
+    }
+  ],
+  "followups": [
+    {
+      "mailbox": "daum",
+      "subject": "😃 You have a new follower.",
+      "from": "\"Cults.\" <hello@cults3d.com>",
+      "date": "Wed, 25 Feb 2026 21:48:07 +0000",
+      "age_hours": 10.721124765
+    },
+    {
+      "mailbox": "daum",
+      "subject": "🎉Download notification Poker Chip - Dual Color Printing",
+      "from": "\"Cults.\" <hello@cults3d.com>",
+      "date": "Wed, 25 Feb 2026 15:41:13 +0000",
+      "age_hours": 16.836124765
+    },
+    {
+      "mailbox": "daum",
+      "subject": "오른다고 끝나는게 아닙니다",
+      "from": "👍짱대리 <eperua2023256@naver.com>",
+      "date": "Wed, 25 Feb 2026 17:37:11 +0900",
+      "age_hours": 23.90334698722222
+    },
+    {
+      "mailbox": "daum",
+      "subject": "(주)메이드올 구지헌님 롯데렌탈(주) 최희조(으)로 부터 세금계산서가 발행 되었습니다.",
+      "from": "\"유니포스트\"<noreply@unipost.co.kr>",
+      "date": "Wed, 25 Feb 2026 02:51:27 +0900",
+      "age_hours": 38.66556920944445
+    },
+    {
+      "mailbox": "daum",
+      "subject": "[창업진흥원]2026년 글로벌 창업허브(K-StartHub) 입주기업 모집",
+      "from": "\"창업진흥원\"<1357@kised.or.kr>",
+      "date": "Tue, 24 Feb 2026 16:56:05 +0900",
+      "age_hours": 48.588346987222224
+    },
+    {
+      "mailbox": "gmail",
+      "subject": "OpenAI Dev News: Codex app, tips from OpenAI devs",
+      "from": "OpenAI <noreply@email.openai.com>",
+      "date": "Wed, 25 Feb 2026 21:36:05 +0000 (UTC)",
+      "age_hours": 10.921680320555556
+    },
+    {
+      "mailbox": "gmail",
+      "subject": "For members only: new 제이비[JB] post",
+      "from": "YouTube <noreply@youtube.com>",
+      "date": "Wed, 25 Feb 2026 05:32:38 -0800",
+      "age_hours": 18.979180320555553
+    },
+    {
+      "mailbox": "gmail",
+      "subject": "For members only: new 제이비[JB] post",
+      "from": "YouTube <noreply@youtube.com>",
+      "date": "Wed, 25 Feb 2026 05:31:32 -0800",
+      "age_hours": 18.997513653888888
+    },
+    {
+      "mailbox": "gmail",
+      "subject": "Wednesday Web Drop",
+      "from": "Mobbin <newsletter@mobbin.com>",
+      "date": "Wed, 25 Feb 2026 11:14:02 +0000",
+      "age_hours": 21.289180320555552
+    },
+    {
+      "mailbox": "gmail",
+      "subject": "Don’t forget: Spend $500, earn 12k points",
+      "from": "\"Amtrak Guest Rewards\" <amtrak@e-mail.amtrak.com>",
+      "date": "Tue, 24 Feb 2026 21:48:48 -0600",
+      "age_hours": 28.709735876111107
+    }
+  ],
+  "reminders": {
+    "24h": [
+      {
+        "mailbox": "다음메일",
+        "subject": "😃 You have a new follower.",
+        "from": "\"Cults.\" <hello@cults3d.com>",
+        "age_hours": 10.7
+      },
+      {
+        "mailbox": "다음메일",
+        "subject": "🎉Download notification Poker Chip - Dual Color Printing",
+        "from": "\"Cults.\" <hello@cults3d.com>",
+        "age_hours": 16.8
+      },
+      {
+        "mailbox": "다음메일",
+        "subject": "오른다고 끝나는게 아닙니다",
+        "from": "👍짱대리 <eperua2023256@naver.com>",
+        "age_hours": 23.9
+      },
+      {
+        "mailbox": "구글메일",
+        "subject": "OpenAI Dev News: Codex app, tips from OpenAI devs",
+        "from": "OpenAI <noreply@email.openai.com>",
+        "age_hours": 10.9
+      },
+      {
+        "mailbox": "구글메일",
+        "subject": "For members only: new 제이비[JB] post",
+        "from": "YouTube <noreply@youtube.com>",
+        "age_hours": 19.0
+      },
+      {
+        "mailbox": "구글메일",
+        "subject": "For members only: new 제이비[JB] post",
+        "from": "YouTube <noreply@youtube.com>",
+        "age_hours": 19.0
+      },
+      {
+        "mailbox": "구글메일",
+        "subject": "Wednesday Web Drop",
+        "from": "Mobbin <newsletter@mobbin.com>",
+        "age_hours": 21.3
+      }
+    ],
+    "48h": [
+      {
+        "mailbox": "다음메일",
+        "subject": "(주)메이드올 구지헌님 롯데렌탈(주) 최희조(으)로 부터 세금계산서가 발행 되었습니다.",
+        "from": "\"유니포스트\"<noreply@unipost.co.kr>",
+        "age_hours": 38.7
+      },
+      {
+        "mailbox": "구글메일",
+        "subject": "Don’t forget: Spend $500, earn 12k points",
+        "from": "\"Amtrak Guest Rewards\" <amtrak@e-mail.amtrak.com>",
+        "age_hours": 28.7
+      }
+    ],
+    "72h": [
+      {
+        "mailbox": "다음메일",
+        "subject": "[창업진흥원]2026년 글로벌 창업허브(K-StartHub) 입주기업 모집",
+        "from": "\"창업진흥원\"<1357@kised.or.kr>",
+        "age_hours": 48.6
+      }
+    ]
+  }
+}

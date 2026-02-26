@@ -1,0 +1,29 @@
+RUN_AT: 2026-02-25T07:08:04.685201+00:00
+====================================================================================================
+ITEM: [주간 리포트] 종료 상담이 크게 줄었어요.
+- account=daum matched=0 moved=0
+  * reason=subject exact match 없음(보조 매칭용 message-id/uid/발신자+일시 기준값 없음)
+- account=gmail matched=0 moved=0
+  * reason=subject exact match 없음(보조 매칭용 message-id/uid/발신자+일시 기준값 없음)
+- account=naver matched=0 moved=0
+  * reason=account error: b'[AUTH] "jimmygu": Authentication failed. (Please check IMAP/SMTP settings in the webmail)'
+  * account_error=b'[AUTH] "jimmygu": Authentication failed. (Please check IMAP/SMTP settings in the webmail)'
+====================================================================================================
+ITEM: -- DO NOT REPLY -- MP ICAM Additional Information
+- account=daum matched=0 moved=0
+  * reason=subject exact match 없음(보조 매칭용 message-id/uid/발신자+일시 기준값 없음)
+- account=gmail matched=2 moved=2
+  * moved=Y mailbox=INBOX uid=7101 message-id=<1027374238.1410.1771475227974@baeadmin-weblogic-app-57cf4ff59d-krfg2> from=dodhra.dodc-mb.dmdc.mbx.icam-helpdesk@mail.mil date=Thu, 19 Feb 2026 04:27:07 +0000 (UTC)
+  * moved=Y mailbox=[Gmail]/&yATMtLz0rQDVaA- uid=9368 message-id=<1027374238.1410.1771475227974@baeadmin-weblogic-app-57cf4ff59d-krfg2> from=dodhra.dodc-mb.dmdc.mbx.icam-helpdesk@mail.mil date=Thu, 19 Feb 2026 04:27:07 +0000 (UTC)
+- account=naver matched=0 moved=0
+  * reason=account error: b'[AUTH] "jimmygu": Authentication failed. (Please check IMAP/SMTP settings in the webmail)'
+  * account_error=b'[AUTH] "jimmygu": Authentication failed. (Please check IMAP/SMTP settings in the webmail)'
+====================================================================================================
+ITEM: Summary of failures for Google Apps Script: 전체 장부 프로젝트
+- account=daum matched=0 moved=0
+  * reason=subject exact match 없음(보조 매칭용 message-id/uid/발신자+일시 기준값 없음)
+- account=gmail matched=0 moved=0
+  * reason=subject exact match 없음(보조 매칭용 message-id/uid/발신자+일시 기준값 없음)
+- account=naver matched=0 moved=0
+  * reason=account error: b'[AUTH] "jimmygu": Authentication failed. (Please check IMAP/SMTP settings in the webmail)'
+  * account_error=b'[AUTH] "jimmygu": Authentication failed. (Please check IMAP/SMTP settings in the webmail)'

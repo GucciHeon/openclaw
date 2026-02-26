@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-02-24T07:40:00.000Z",
+  "generatedAt": "2026-02-26T20:32:05.858Z",
   "metrics": {
-    "activeAgents": 8,
-    "totalAgents": 8,
+    "activeAgents": 5,
+    "totalAgents": 5,
     "automationJobs": 19,
-    "indexedDocs": 29,
-    "mailReportDocs": 16,
-    "commitsTotal": 18,
-    "commits7d": 18,
-    "maturityScore": 94
+    "indexedDocs": 32,
+    "mailReportDocs": 24,
+    "commitsTotal": 20,
+    "commits7d": 20,
+    "maturityScore": 95
   }
 }

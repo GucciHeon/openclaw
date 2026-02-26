@@ -1,42 +1,47 @@
-# AM 최종 통합 보고 (orchestrator)
+인삿말
+안녕하세요 대표님, 현 시점 IMAP 재조회 기준 오전 메일 점검 결과 보고드립니다.
 
-- 실행시각: 2026-02-24 01:03 KST
-- 대상 provider: daum, gmail, naver
-- 운영원칙 준수: 읽기/분석만 수행(삭제/발송/이동/외부실행/링크클릭 미실행)
+다음메일 (🗑️, ⚠️)
+🗑️ [롯데렌탈] 02 월 이용대금명세서 입니다
+🗑️ 정산금액 입금 완료 안내입니다.
+🗑️ CJ대한통운 LoIS Parcel 로그인 2차 인증
+🗑️ (광고) ◈ 조달 . 공공 입찰 적격, 계약이행능력심사용 기업신용평가 신청 및 제출서류 요약해서 보내 드립니다.
+🗑️ [스마트스토어] 주문현황을 알려드립니다.
+🗑️ (광고)✨90일 전액 무료✨아직도 엑셀로 경리업무하세요? 회사 현황 체크해 보세요!
+🗑️ 정산금액 입금 완료 안내입니다.
+⚠️ [창업진흥원]2026년 글로벌 창업허브(K-StartHub) 입주기업 모집
+⚠️ 주식회사메이드올(MadeAllInc.)님의 2026년 02월  직장 고지서입니다.(건강보험,국민연금,고용보험,산재보험 고지내역 포함)
+⚠️ (주)메이드올 구지헌님 롯데렌탈(주) 최희조(으)로 부터 세금계산서가 발행 되었습니다.
 
-## [1] 계정별 상태(설정/미설정/접속실패 + 근거 키 이름)
-- **daum: 미설정**
-  - 근거: 자격정보 user, password 미설정
-  - 근거 키: host=default, port=default, user=미탐지, pass=미탐지
-  - 적용 host/port: imap.daum.net:993
-- **gmail: 미설정**
-  - 근거: 자격정보 user, password 미설정
-  - 근거 키: host=default, port=default, user=미탐지, pass=미탐지
-  - 적용 host/port: imap.gmail.com:993
-- **naver: 미설정**
-  - 근거: 자격정보 user, password 미설정
-  - 근거 키: host=default, port=default, user=미탐지, pass=미탐지
-  - 적용 host/port: imap.naver.com:993
+구글메일 (🗑️, ⚠️)
+🗑️ No Spanish yet?
+🗑️ Summary of failures for Google Apps Script: 전체 장부 프로젝트
+🗑️ 🥹 Are you abandoning your streak?
+🗑️ Summary of failures for Google Apps Script: 전체 장부 프로젝트
+⚠️ [GucciHeon/mission-control-test] Run cancelled: pages build and
+ deployment - master (8c97475)
+⚠️ RE: Re: [서울신라호텔] 6월 객실 요금 제안드립니다.
 
-## [2] 신규/중요/삭제후보 집계
-- 신규(UNSEEN): 0건
-- 중요(검토필요): 0건
-- 삭제후보: 0건
-- 비고: 실행 가능 provider가 없거나 UNSEEN이 없어 신규 메일 0건입니다.
+분석 내용(메일명별 요약, 할일 추천)
+([창업진흥원]2026년 글로벌 창업허브(K-StartHub) 입주기업 모집)
+- 요약: K-StartHub 입주기업 모집 공고로 신청 기한과 자격 요건 확인이 필요한 메일입니다.
+- 할일 추천: 신청 의향이 있으면 오늘 안에 자격요건/마감일 확인 후, 제출 담당자와 준비 항목을 확정하세요.
+(주식회사메이드올(MadeAllInc.)님의 2026년 02월  직장 고지서입니다.(건강보험,국민연금,고용보험,산재보험 고지내역 포함))
+- 요약: 4대보험 고지 내역 안내로 월 납부 금액 확인이 필요한 행정 메일입니다.
+- 할일 추천: 고지 금액과 내부 급여/인원 변동 반영 여부를 확인하고, 납부 일정 캘린더에 반영하세요.
+((주)메이드올 구지헌님 롯데렌탈(주) 최희조(으)로 부터 세금계산서가 발행 되었습니다.)
+- 요약: 거래처 발행 세금계산서 통지로 회계 반영 및 증빙 확인이 필요한 메일입니다.
+- 할일 추천: 전자세금계산서 금액·공급가·부가세를 대조하고, 회계 처리 담당에게 반영 완료 여부를 확인하세요.
+([GucciHeon/mission-control-test] Run cancelled: pages build and
+ deployment - master (8c97475))
+- 요약: GitHub Pages 배포가 취소된 실행 건으로 배포 파이프라인 안정성 점검이 필요합니다.
+- 할일 추천: Actions 로그에서 취소 원인(수동 취소/권한/워크플로 충돌)을 확인하고 재실행 1회로 정상 여부를 점검하세요.
+(RE: Re: [서울신라호텔] 6월 객실 요금 제안드립니다.)
+- 요약: 호텔 측 후속 회신이 도착해 조건 확인 및 의사결정 타이밍이 잡힌 상태입니다.
+- 할일 추천: 회신 본문에서 객실가·마감기한·취소조건을 확인하고 진행/보류를 오늘 중 결정하세요.
 
-## [3] 검토 필요 메일(제목 + 3줄 요약)
-- 없음: 제목 기반 1차 분류 결과 검토필요 메일이 없거나, 계정 미설정/접속실패로 본문 단계를 스킵했습니다.
-
-## [4] 회신 트래킹(내 답변 필요/상대 답변 대기/48시간 이상)
-- 내 답변 필요: 0건
-- 상대 답변 대기: 0건
-- 48시간 이상: 0건
-- 비고: 검토필요 모수가 0건이라 회신 추적 신호가 없습니다.
-
-## [5] 추가 확인 요청 목록(상위가 하위에 다시 요청한 항목)
-- daum: IMAP user/password 환경변수 확인 필요 (예: DAUM_IMAP_USER, DAUM_IMAP_PASS)
-- gmail: IMAP user/password 환경변수 확인 필요 (예: GMAIL_IMAP_USER, GMAIL_IMAP_PASS)
-- naver: IMAP user/password 환경변수 확인 필요 (예: NAVER_IMAP_USER, NAVER_IMAP_PASS)
-
-## [6] 삭제 승인 대기 목록(실행 금지, 제목만)
-- 없음
+리마인드(24h/48h/72h)
+- 24h: [창업진흥원]2026년 글로벌 창업허브(K-StartHub) 입주기업 모집, 주식회사메이드올(MadeAllInc.)님의 2026년 02월  직장 고지서입니다.(건강보험,국민연금,고용보험,산재보험 고지내역 포함), (주)메이드올 구지헌님 롯데렌탈(주) 최희조(으)로 부터 세금계산서가 발행 되었습니다.
+- 48h: [GucciHeon/mission-control-test] Run cancelled: pages build and
+ deployment - master (8c97475)
+- 72h: [서울신라호텔] 6월 객실 요금 제안드립니다.

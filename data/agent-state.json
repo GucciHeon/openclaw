@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-02-23T20:28:02.071Z",
+  "generatedAt": "2026-02-26T20:32:05.970Z",
   "sourceRoot": "/home/user/.openclaw/workspace",
   "policy": "Hashes are computed from real runtime MD files used by Jarvis.",
-  "combinedSha256": "b3313fa9564400ff2e4ce9336b604ae200ba9c3fa0f9b4907e7d07373d4887e5",
+  "combinedSha256": "3d353494c6c5cd3a014bacfb3016781b315c299406ce500198e495e2b7756cf5",
   "files": [
     {
       "path": "AGENTS.md",
@@ -47,5 +47,18 @@
       "sha256": "78f3e26b8625ea283c615cec291d4978da5f9f01df730628c5c42094418b8dc2"
     }
   ],
-  "memoryFiles": []
+  "memoryFiles": [
+    {
+      "path": "memory/2026-02-24.md",
+      "bytes": 1584,
+      "lines": 19,
+      "sha256": "454ab154d0f9188975834916da5537ff2a1259a3023349ec00bdc85530bd72c0"
+    },
+    {
+      "path": "memory/2026-02-26.md",
+      "bytes": 1516,
+      "lines": 24,
+      "sha256": "37d8e8b9d7d174611ed729dd778c820b4a86a3e350456a53802a2dbb6c705779"
+    }
+  ]
 }

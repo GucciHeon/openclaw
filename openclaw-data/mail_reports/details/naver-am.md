@@ -1,3 +1,4 @@
-# NAVER AM 확인필요 상세 요약
+fetched_at: 2026-03-01T09:00:00+09:00
+account: naver
 
-없음 (credential 미설정)
+검토필요 없음

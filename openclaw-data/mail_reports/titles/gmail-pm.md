@@ -1,4 +1,5 @@
-unread_count: 0
+fetched_at: 2026-02-28T23:23:00+09:00
+account: gmail
+query_rule: INBOX recent 10
 
-제목 목록
-- IMAP 자격증명 환경변수 누락: GMAIL_IMAP_USER / GMAIL_IMAP_PASS (또는 대체 변수)
+ERROR: IMAP 접속 설정 미확인 (host/port/user/password 필요)

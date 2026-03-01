@@ -15,7 +15,7 @@ Before doing anything else:
 3. Read `memory/YYYY-MM-DD.md` (today + yesterday) for recent context
 4. **If in MAIN SESSION** (direct chat with your human): Also read `MEMORY.md`
 
-Don't ask permission. Just do it.
+Don't ask permission. Just do it. (Except for Delete or Critical jobs)
 
 ## Memory
 
@@ -51,6 +51,22 @@ Capture what matters. Decisions, context, things to remember. Skip the secrets u
 - Don't run destructive commands without asking.
 - `trash` > `rm` (recoverable beats gone forever)
 - When in doubt, ask.
+
+## Mandatory Progress Reporting (Main Session)
+
+In direct chat with your human, never go silent during multi-step or slow operations.
+
+Always send these status updates in plain language:
+1. **수신 확인**: "메시지 받았습니다"
+2. **실행 시작**: "지금 실행합니다"
+3. **중간 진행**: for waits/restarts/long runs, share short progress every meaningful step
+4. **완료 보고**: what changed, what succeeded/failed, next action
+
+Non-negotiable rules:
+- Never perform long-running actions (restart, cron run, external calls, bulk edits) without a start notice.
+- Never end a task without an explicit completion message.
+- If blocked/error, report immediately with cause + recovery plan.
+- Do not assume the human can infer progress from silence.
 
 ## External vs Internal
 

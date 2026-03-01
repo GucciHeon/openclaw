@@ -1,48 +1,23 @@
-1) 인삿말
-현 시점 IMAP 재조회 기준 PM 메일 보고드립니다. (기준시각: 2026-02-26 17:31:23 KST)
+좋은 밤입니다 대표님. 상태: 수집 결과 확인 완료(Gmail/Daum), NAVER IMAP 미설정으로 네이버 PM은 미확인이며 삭제 실행은 승인 대기입니다.
 
-2) 다음메일 (🗑️, ⚠️)
-🗑️
-- 1. [스마트스토어] 주문현황을 알려드립니다. | 스마트스토어<smartstoreadmin_noreply@navercorp.com> | Thu, 26 Feb 2026 08:13:03 +0000 (UTC)
-- 2. (광고)[KCCI . Forbes 2026 사회공헌대상] 예비 후보 선정 알림 드립니다. | 양동욱 <leejm207575@openxgroup.co.kr> | Thu, 26 Feb 2026 11:07:50 +0900
-- 3. (광고)✨90일 전액 무료✨아직도 엑셀로 경리업무하세요? 회사 현황 체크해 보세요! | "경리나라" <webcash.cshelp@gmail.com> | Thu, 26 Feb 2026 07:46:32 +0900
-- 4. [스마트스토어] 주문현황을 알려드립니다. | 스마트스토어<smartstoreadmin_noreply@navercorp.com> | Wed, 25 Feb 2026 08:14:10 +0000 (UTC)
-- 5. (광고) ◈ 조달 . 공공 입찰 적격, 계약이행능력심사용 기업신용평가 신청 및 제출서류 요약해서 보내 드립니다. | 조달 공공 입찰용 기업평가 권승민 과장<01093834469@sci.co.kr> | Wed, 25 Feb 2026 15:26:08 +0900
-⚠️
-- 1. 😃 You have a new follower. | "Cults." <hello@cults3d.com> | Wed, 25 Feb 2026 21:48:07 +0000
-- 2. 🎉Download notification Poker Chip - Dual Color Printing | "Cults." <hello@cults3d.com> | Wed, 25 Feb 2026 15:41:13 +0000
-- 3. 오른다고 끝나는게 아닙니다 | 👍짱대리 <eperua2023256@naver.com> | Wed, 25 Feb 2026 17:37:11 +0900
-- 4. (주)메이드올 구지헌님 롯데렌탈(주) 최희조(으)로 부터 세금계산서가 발행 되었습니다. | "유니포스트"<noreply@unipost.co.kr> | Wed, 25 Feb 2026 02:51:27 +0900
-- 5. [창업진흥원]2026년 글로벌 창업허브(K-StartHub) 입주기업 모집 | "창업진흥원"<1357@kised.or.kr> | Tue, 24 Feb 2026 16:56:05 +0900
+메일 제목 리스트
+- 🗑️ [디코드뉴스] 이사들만 주주로 있는 회사는 어떻게 보수를 결정하여야 하는가
+- ⚠️ 우피 Oopy에서 결제한 내역입니다.
+- 🗑️ [K-Startup News] 창업의 든든한 길잡이, 스타트업 원스톱 지원센터
+- 🗑️ (주)메이드올 구지헌님 롯데렌탈(주) 최희조(으)로 부터 세금계산서가 발행 되었습니다.
+- 🗑️ [창업진흥원]2026년 글로벌 창업허브(K-StartHub) 입주기업 모집
+- ⚠️ Summary of failures for Google Apps Script: 전체 장부 프로젝트
+- 🗑️ OpenAI Dev News: Codex app, tips from OpenAI devs
+- ⚠️ [결제 변경사항] 2026년 3월 말부터 적용되는 Google Cloud 콘솔 권한 변경사항
+- ⚠️ 90% of budget reached
 
-3) 구글메일 (🗑️, ⚠️)
-🗑️
-- 1. Gucciheon 님, 넷플릭스의 공개 예정작을 소개합니다 | Netflix <info@members.netflix.com> | Thu, 26 Feb 2026 08:18:27 +0000
-- 2. Summary of failures for Google Apps Script: 전체 장부 프로젝트 | noreply-apps-scripts-notifications@google.com | Wed, 25 Feb 2026 10:59:49 -0800
-- 3. 🥹 Are you abandoning your streak? | Duolingo <hello@duolingo.com> | Wed, 25 Feb 2026 10:56:04 +0000
-⚠️
-- 1. OpenAI Dev News: Codex app, tips from OpenAI devs | OpenAI <noreply@email.openai.com> | Wed, 25 Feb 2026 21:36:05 +0000 (UTC)
-- 2. For members only: new 제이비[JB] post | YouTube <noreply@youtube.com> | Wed, 25 Feb 2026 05:32:38 -0800
-- 3. For members only: new 제이비[JB] post | YouTube <noreply@youtube.com> | Wed, 25 Feb 2026 05:31:32 -0800
-- 4. Wednesday Web Drop | Mobbin <newsletter@mobbin.com> | Wed, 25 Feb 2026 11:14:02 +0000
-- 5. Don’t forget: Spend $500, earn 12k points | "Amtrak Guest Rewards" <amtrak@e-mail.amtrak.com> | Tue, 24 Feb 2026 21:48:48 -0600
-
-4) 분석 내용(메일명별 요약, 할일 추천)
-- 다음메일: 확인 필요 5건.
-  - 😃 You have a new follower.: 발신자/제목 기준으로 빠른 회신 또는 확인 권장.
-  - 🎉Download notification Poker Chip - Dual Color Printing: 발신자/제목 기준으로 빠른 회신 또는 확인 권장.
-  - 오른다고 끝나는게 아닙니다: 발신자/제목 기준으로 빠른 회신 또는 확인 권장.
-  - (주)메이드올 구지헌님 롯데렌탈(주) 최희조(으)로 부터 세금계산서가 발행 되었습니다.: 발신자/제목 기준으로 빠른 회신 또는 확인 권장.
-  - [창업진흥원]2026년 글로벌 창업허브(K-StartHub) 입주기업 모집: 발신자/제목 기준으로 빠른 회신 또는 확인 권장.
-- 구글메일: 확인 필요 5건.
-  - OpenAI Dev News: Codex app, tips from OpenAI devs: 발신자/제목 기준으로 빠른 회신 또는 확인 권장.
-  - For members only: new 제이비[JB] post: 발신자/제목 기준으로 빠른 회신 또는 확인 권장.
-  - For members only: new 제이비[JB] post: 발신자/제목 기준으로 빠른 회신 또는 확인 권장.
-  - Wednesday Web Drop: 발신자/제목 기준으로 빠른 회신 또는 확인 권장.
-  - Don’t forget: Spend $500, earn 12k points: 발신자/제목 기준으로 빠른 회신 또는 확인 권장.
-- 할일 추천: ⚠️ 목록은 오늘 안에 1차 확인, 회신 필요 건은 답장 초안 작성 후 검토 권장.
-
-5) 리마인드(24h/48h/72h)
-- 24h: 😃 You have a new follower., 🎉Download notification Poker Chip - Dual Color Printing, 오른다고 끝나는게 아닙니다, OpenAI Dev News: Codex app, tips from OpenAI devs, For members only: new 제이비[JB] post 외 2건
-- 48h: (주)메이드올 구지헌님 롯데렌탈(주) 최희조(으)로 부터 세금계산서가 발행 되었습니다., Don’t forget: Spend $500, earn 12k points
-- 72h: [창업진흥원]2026년 글로벌 창업허브(K-StartHub) 입주기업 모집
+분석 내용
+- **우피 Oopy에서 결제한 내역입니다.**: 결제 발생 안내 메일로 실제 승인 건인지 즉시 대사 필요 / 결제 주체·금액·서비스명 대조 후 이상 거래 차단 / 기한: 2026-03-01 11:00 / 미확인 리스크: 무단·중복 결제 누락
+- **Summary of failures for Google Apps Script: 전체 장부 프로젝트**: 장부 자동화 스크립트 실패 알림으로 데이터 누락 가능 / 실패 로그 확인 후 재실행 및 트리거 수정 / 기한: 2026-02-28 23:30 / 미확인 리스크: 재무 집계 지연·오류
+- **[결제 변경사항] 2026년 3월 말부터 적용되는 Google Cloud 콘솔 권한 변경사항**: 결제 권한 정책 변경 사전 공지로 권한 체계 점검 필요 / IAM·결제관리자 권한 점검 및 변경 대응 체크리스트 확정 / 기한: 2026-03-05 18:00 / 미확인 리스크: 권한 공백으로 결제 운영 차질
+- **90% of budget reached**: GCP 예산 90% 임계치 도달 경고 / 상위 비용 서비스 점검 및 100% 알림·예산 한도 재설정 / 기한: 2026-02-28 23:00 / 미확인 리스크: 월 예산 초과 과금
+- **[디코드뉴스] 이사들만 주주로 있는 회사는 어떻게 보수를 결정하여야 하는가**: 일반 법무 뉴스레터 성격으로 즉시 실행가치 낮음 / 삭제 후보 유지(승인 후 일괄 정리) / 기한: 2026-03-02 18:00 / 미확인 리스크: 긴급 리스크 낮음
+- **[K-Startup News] 창업의 든든한 길잡이, 스타트업 원스톱 지원센터**: 기관 홍보/정책 소개형 안내 / 삭제 후보 일괄 정리 / 기한: 2026-03-02 18:00 / 미확인 리스크: 지원사업 관심 시 정보 누락 가능
+- **(주)메이드올 구지헌님 롯데렌탈(주) 최희조(으)로 부터 세금계산서가 발행 되었습니다.**: 세금계산서 통지이나 사용자 고정 규칙에 따라 롯데렌탈(법인차) 건은 삭제 후보 유지 / 삭제 후보 유지 후 필요 시 검색 복구 / 기한: 2026-03-02 18:00 / 미확인 리스크: 월말 증빙 확인 지연
+- **[창업진흥원]2026년 글로벌 창업허브(K-StartHub) 입주기업 모집**: 공고형 모집 안내로 홍보 성격 우세 / 삭제 후보 일괄 정리 / 기한: 2026-03-02 18:00 / 미확인 리스크: 해당 사업 참여 계획 시 기회 누락
+- **OpenAI Dev News: Codex app, tips from OpenAI devs**: 정기 개발자 뉴스레터로 참고자료 성격 / 삭제 후보 또는 읽기목록 분리 보관 / 기한: 2026-03-02 18:00 / 미확인 리스크: 생산성 팁 확인 지연

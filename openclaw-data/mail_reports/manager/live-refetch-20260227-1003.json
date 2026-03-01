@@ -1,0 +1,155 @@
+{
+  "run_at": "2026-02-27T10:04:15.458199+09:00",
+  "results": [
+    {
+      "account": "daum",
+      "ok": true,
+      "mailbox": "INBOX",
+      "error": null,
+      "messages": [
+        {
+          "uid": "400",
+          "subject": "정산금액 입금 완료 안내입니다.",
+          "from": "스마트스토어<smartstore_noreply@navercorp.com>",
+          "date": "Fri, 27 Feb 2026 00:19:58 +0000 (UTC)"
+        },
+        {
+          "uid": "399",
+          "subject": "[K-Startup News] 창업의 든든한 길잡이, 스타트업 원스톱 지원센터",
+          "from": "\"창업진흥원\"<1357@kised.or.kr>",
+          "date": "Fri, 27 Feb 2026 07:03:18 +0900"
+        },
+        {
+          "uid": "398",
+          "subject": "[스마트스토어] 주문현황을 알려드립니다.",
+          "from": "스마트스토어<smartstoreadmin_noreply@navercorp.com>",
+          "date": "Thu, 26 Feb 2026 08:13:03 +0000 (UTC)"
+        },
+        {
+          "uid": "397",
+          "subject": "(광고)[KCCI . Forbes 2026 사회공헌대상] 예비 후보 선정 알림 드립니다.",
+          "from": "양동욱 <leejm207575@openxgroup.co.kr>",
+          "date": "Thu, 26 Feb 2026 11:07:50 +0900"
+        },
+        {
+          "uid": "396",
+          "subject": "CJ대한통운 LoIS Parcel 로그인 2차 인증",
+          "from": "\"no-reply@cjlogistics.com\" <no-reply@cjlogistics.com>",
+          "date": "Thu, 26 Feb 2026 11:30:57 +0900 (GMT+09:00)"
+        },
+        {
+          "uid": "395",
+          "subject": "(광고)✨90일 전액 무료✨아직도 엑셀로 경리업무하세요? 회사 현황 체크해 보세요!",
+          "from": "\"경리나라\" <webcash.cshelp@gmail.com>",
+          "date": "Thu, 26 Feb 2026 07:46:32 +0900"
+        },
+        {
+          "uid": "394",
+          "subject": "😃 You have a new follower.",
+          "from": "\"Cults.\" <hello@cults3d.com>",
+          "date": "Wed, 25 Feb 2026 21:48:07 +0000"
+        },
+        {
+          "uid": "393",
+          "subject": "🎉Download notification Poker Chip - Dual Color Printing",
+          "from": "\"Cults.\" <hello@cults3d.com>",
+          "date": "Wed, 25 Feb 2026 15:41:13 +0000"
+        },
+        {
+          "uid": "392",
+          "subject": "오른다고 끝나는게 아닙니다",
+          "from": "👍짱대리 <eperua2023256@naver.com>",
+          "date": "Wed, 25 Feb 2026 17:37:11 +0900"
+        },
+        {
+          "uid": "391",
+          "subject": "[스마트스토어] 주문현황을 알려드립니다.",
+          "from": "스마트스토어<smartstoreadmin_noreply@navercorp.com>",
+          "date": "Wed, 25 Feb 2026 08:14:10 +0000 (UTC)"
+        }
+      ],
+      "meta": {
+        "total_messages": 400
+      }
+    },
+    {
+      "account": "gmail",
+      "ok": true,
+      "mailbox": "INBOX",
+      "error": null,
+      "messages": [
+        {
+          "uid": "236",
+          "subject": "Summary of failures for Google Apps Script: 전체 장부 프로젝트",
+          "from": "noreply-apps-scripts-notifications@google.com",
+          "date": "Thu, 26 Feb 2026 10:59:51 -0800"
+        },
+        {
+          "uid": "235",
+          "subject": "Last chance to treat yourself to bonus points!",
+          "from": "\"Amtrak Guest Rewards\" <amtrak@e-mail.amtrak.com>",
+          "date": "Thu, 26 Feb 2026 12:08:55 -0600"
+        },
+        {
+          "uid": "234",
+          "subject": "This is the new best way to prompt is now LIVE!",
+          "from": "Adam Fard <adam@uxpilot.ai>",
+          "date": "Thu, 26 Feb 2026 16:01:24 +0000"
+        },
+        {
+          "uid": "233",
+          "subject": "For members only: new 제이비[JB] post",
+          "from": "YouTube <noreply@youtube.com>",
+          "date": "Thu, 26 Feb 2026 05:49:02 -0800"
+        },
+        {
+          "uid": "232",
+          "subject": "For members only: new 제이비[JB] post",
+          "from": "YouTube <noreply@youtube.com>",
+          "date": "Thu, 26 Feb 2026 05:48:18 -0800"
+        },
+        {
+          "uid": "231",
+          "subject": "[결제 변경사항] 2026년 3월 말부터 적용되는 Google Cloud 콘솔 권한 변경사항",
+          "from": "Google Cloud <CloudPlatform-noreply@google.com>",
+          "date": "Thu, 26 Feb 2026 05:30:04 -0800"
+        },
+        {
+          "uid": "230",
+          "subject": "Obligatory Spanish reminder",
+          "from": "Duolingo <hello@duolingo.com>",
+          "date": "Thu, 26 Feb 2026 10:08:48 +0000"
+        },
+        {
+          "uid": "229",
+          "subject": "Re: 평택 주한미군 행사 견적 요청의 건",
+          "from": "주진형(Chief파트너) - 객실판촉(강남) <ricky.choo@josunpalace.com>",
+          "date": "Thu, 26 Feb 2026 09:03:38 +0000"
+        },
+        {
+          "uid": "228",
+          "subject": "Gucciheon 님, 넷플릭스의 공개 예정작을 소개합니다",
+          "from": "Netflix <info@members.netflix.com>",
+          "date": "Thu, 26 Feb 2026 08:18:27 +0000"
+        },
+        {
+          "uid": "227",
+          "subject": "OpenAI Dev News: Codex app, tips from OpenAI devs",
+          "from": "OpenAI <noreply@email.openai.com>",
+          "date": "Wed, 25 Feb 2026 21:36:05 +0000 (UTC)"
+        }
+      ],
+      "meta": {
+        "total_messages": 236
+      }
+    },
+    {
+      "account": "naver",
+      "ok": false,
+      "mailbox": "INBOX",
+      "error": "b'[AUTH] \"jimmygu\": Authentication failed. (Please check IMAP/SMTP settings in the webmail)'",
+      "messages": [],
+      "meta": {}
+    }
+  ]
+}

@@ -1,29 +1,15 @@
-RUN_AT: 2026-02-25T07:08:04.685201+00:00
-====================================================================================================
-ITEM: [주간 리포트] 종료 상담이 크게 줄었어요.
-- account=daum matched=0 moved=0
-  * reason=subject exact match 없음(보조 매칭용 message-id/uid/발신자+일시 기준값 없음)
-- account=gmail matched=0 moved=0
-  * reason=subject exact match 없음(보조 매칭용 message-id/uid/발신자+일시 기준값 없음)
-- account=naver matched=0 moved=0
-  * reason=account error: b'[AUTH] "jimmygu": Authentication failed. (Please check IMAP/SMTP settings in the webmail)'
-  * account_error=b'[AUTH] "jimmygu": Authentication failed. (Please check IMAP/SMTP settings in the webmail)'
-====================================================================================================
-ITEM: -- DO NOT REPLY -- MP ICAM Additional Information
-- account=daum matched=0 moved=0
-  * reason=subject exact match 없음(보조 매칭용 message-id/uid/발신자+일시 기준값 없음)
-- account=gmail matched=2 moved=2
-  * moved=Y mailbox=INBOX uid=7101 message-id=<1027374238.1410.1771475227974@baeadmin-weblogic-app-57cf4ff59d-krfg2> from=dodhra.dodc-mb.dmdc.mbx.icam-helpdesk@mail.mil date=Thu, 19 Feb 2026 04:27:07 +0000 (UTC)
-  * moved=Y mailbox=[Gmail]/&yATMtLz0rQDVaA- uid=9368 message-id=<1027374238.1410.1771475227974@baeadmin-weblogic-app-57cf4ff59d-krfg2> from=dodhra.dodc-mb.dmdc.mbx.icam-helpdesk@mail.mil date=Thu, 19 Feb 2026 04:27:07 +0000 (UTC)
-- account=naver matched=0 moved=0
-  * reason=account error: b'[AUTH] "jimmygu": Authentication failed. (Please check IMAP/SMTP settings in the webmail)'
-  * account_error=b'[AUTH] "jimmygu": Authentication failed. (Please check IMAP/SMTP settings in the webmail)'
-====================================================================================================
-ITEM: Summary of failures for Google Apps Script: 전체 장부 프로젝트
-- account=daum matched=0 moved=0
-  * reason=subject exact match 없음(보조 매칭용 message-id/uid/발신자+일시 기준값 없음)
-- account=gmail matched=0 moved=0
-  * reason=subject exact match 없음(보조 매칭용 message-id/uid/발신자+일시 기준값 없음)
-- account=naver matched=0 moved=0
-  * reason=account error: b'[AUTH] "jimmygu": Authentication failed. (Please check IMAP/SMTP settings in the webmail)'
-  * account_error=b'[AUTH] "jimmygu": Authentication failed. (Please check IMAP/SMTP settings in the webmail)'
+RUN_AT: 2026-02-28T03:34:57.320884+00:00
+SOURCE_LEDGER: /home/user/.openclaw/workspace/mail_reports/manager/mail-followup-ledger.json
+ACCOUNT: daum requested=6 moved=6 not_found=0
+  MOVED uid=29532 | [스마트스토어] 주문현황을 알려드립니다. | 스마트스토어<smartstoreadmin_noreply@navercorp.com> | Fri, 27 Feb 2026 08:13:12 +0000 (UTC)
+  MOVED uid=29525 | 정산금액 입금 완료 안내입니다. | 스마트스토어<smartstore_noreply@navercorp.com> | Fri, 27 Feb 2026 00:19:58 +0000 (UTC)
+  MOVED uid=29523 | [스마트스토어] 주문현황을 알려드립니다. | 스마트스토어<smartstoreadmin_noreply@navercorp.com> | Thu, 26 Feb 2026 08:13:03 +0000 (UTC)
+  MOVED uid=29521 | (광고)[KCCI . Forbes 2026 사회공헌대상] 예비 후보 선정 알림 드립니다. | 양동욱 <leejm207575@openxgroup.co.kr> | Thu, 26 Feb 2026 11:07:50 +0900
+  MOVED uid=29519 | CJ대한통운 LoIS Parcel 로그인 2차 인증 | "no-reply@cjlogistics.com" <no-reply@cjlogistics.com> | Thu, 26 Feb 2026 11:30:57 +0900 (GMT+09:00)
+  MOVED uid=29513 | (광고)✨90일 전액 무료✨아직도 엑셀로 경리업무하세요? 회사 현황 체크해 보세요! | "경리나라" <webcash.cshelp@gmail.com> | Thu, 26 Feb 2026 07:46:32 +0900
+ACCOUNT: gmail requested=5 moved=5 not_found=0
+  MOVED uid=7167 | Summary of failures for Google Apps Script: 전체 장부 프로젝트 | noreply-apps-scripts-notifications@google.com | Fri, 27 Feb 2026 10:59:58 -0800
+  MOVED uid=7166 | 🤯 Your Spanish stats? Just wow. | Duolingo <hello@duolingo.com> | Fri, 27 Feb 2026 16:13:27 +0000
+  MOVED uid=7163 | 《나는 솔로》, 잘 보고 계시나요? | Netflix <info@members.netflix.com> | Fri, 27 Feb 2026 11:19:02 +0000
+  MOVED uid=7162 | You’re heating up! Can you make it to 36 days? | Duolingo <hello@duolingo.com> | Fri, 27 Feb 2026 10:13:36 +0000
+  MOVED uid=7160 | Summary of failures for Google Apps Script: 전체 장부 프로젝트 | noreply-apps-scripts-notifications@google.com | Thu, 26 Feb 2026 10:59:51 -0800

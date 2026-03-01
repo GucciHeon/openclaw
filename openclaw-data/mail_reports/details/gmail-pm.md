@@ -1,2 +1,4 @@
-검토 대상 메일 제목이 없습니다.
-요청 파일(`/home/user/.openclaw/workspace/mail_reports/requests/gmail-pm-need-review.md`)이 비어 있어 본문/스레드 추적 요약 항목이 없습니다.
+fetched_at: 2026-02-28T23:23:00+09:00
+account: gmail
+
+검토필요 없음

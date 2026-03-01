@@ -1,0 +1,169 @@
+{
+  "run_at": "2026-02-27T17:30:54.312614+09:00",
+  "results": [
+    {
+      "account": "daum",
+      "ok": true,
+      "mailbox": "INBOX",
+      "error": null,
+      "messages": [
+        {
+          "uid": "29532",
+          "subject": "[스마트스토어] 주문현황을 알려드립니다.",
+          "from": "스마트스토어<smartstoreadmin_noreply@navercorp.com>",
+          "date": "Fri, 27 Feb 2026 08:13:12 +0000 (UTC)",
+          "seen": false
+        },
+        {
+          "uid": "29531",
+          "subject": "[디코드뉴스] 이사들만 주주로 있는 회사는 어떻게 보수를 결정하여야 하는가",
+          "from": "\"법무법인 디코드\" <dcodenews@dcodelaw.com>",
+          "date": "Fri, 27 Feb 2026 16:52:47 +0900",
+          "seen": false
+        },
+        {
+          "uid": "29530",
+          "subject": "💰 New sale Kar98k Model Gun / Battleground / Model gun / Sniper Rifle / HD",
+          "from": "\"Cults.\" <hello@cults3d.com>",
+          "date": "Fri, 27 Feb 2026 07:44:25 +0000",
+          "seen": false
+        },
+        {
+          "uid": "29529",
+          "subject": "우피 Oopy에서 결제한 내역입니다.",
+          "from": "Payple <help@payple.kr>",
+          "date": "Fri, 27 Feb 2026 15:06:16 +0900",
+          "seen": false
+        },
+        {
+          "uid": "29525",
+          "subject": "정산금액 입금 완료 안내입니다.",
+          "from": "스마트스토어<smartstore_noreply@navercorp.com>",
+          "date": "Fri, 27 Feb 2026 00:19:58 +0000 (UTC)",
+          "seen": false
+        },
+        {
+          "uid": "29524",
+          "subject": "[K-Startup News] 창업의 든든한 길잡이, 스타트업 원스톱 지원센터",
+          "from": "\"창업진흥원\"<1357@kised.or.kr>",
+          "date": "Fri, 27 Feb 2026 07:03:18 +0900",
+          "seen": false
+        },
+        {
+          "uid": "29523",
+          "subject": "[스마트스토어] 주문현황을 알려드립니다.",
+          "from": "스마트스토어<smartstoreadmin_noreply@navercorp.com>",
+          "date": "Thu, 26 Feb 2026 08:13:03 +0000 (UTC)",
+          "seen": false
+        },
+        {
+          "uid": "29521",
+          "subject": "(광고)[KCCI . Forbes 2026 사회공헌대상] 예비 후보 선정 알림 드립니다.",
+          "from": "양동욱 <leejm207575@openxgroup.co.kr>",
+          "date": "Thu, 26 Feb 2026 11:07:50 +0900",
+          "seen": false
+        },
+        {
+          "uid": "29519",
+          "subject": "CJ대한통운 LoIS Parcel 로그인 2차 인증",
+          "from": "\"no-reply@cjlogistics.com\" <no-reply@cjlogistics.com>",
+          "date": "Thu, 26 Feb 2026 11:30:57 +0900 (GMT+09:00)",
+          "seen": true
+        },
+        {
+          "uid": "29513",
+          "subject": "(광고)✨90일 전액 무료✨아직도 엑셀로 경리업무하세요? 회사 현황 체크해 보세요!",
+          "from": "\"경리나라\" <webcash.cshelp@gmail.com>",
+          "date": "Thu, 26 Feb 2026 07:46:32 +0900",
+          "seen": false
+        }
+      ],
+      "meta": {
+        "total_messages": 400,
+        "unseen_count": 9
+      }
+    },
+    {
+      "account": "gmail",
+      "ok": true,
+      "mailbox": "INBOX",
+      "error": null,
+      "messages": [
+        {
+          "uid": "7161",
+          "subject": "Your students could win big this spring",
+          "from": "Tinkercad <no-reply@autodesk.com>",
+          "date": "Thu, 26 Feb 2026 22:34:44 +0000 (UTC)",
+          "seen": false
+        },
+        {
+          "uid": "7160",
+          "subject": "Summary of failures for Google Apps Script: 전체 장부 프로젝트",
+          "from": "noreply-apps-scripts-notifications@google.com",
+          "date": "Thu, 26 Feb 2026 10:59:51 -0800",
+          "seen": false
+        },
+        {
+          "uid": "7159",
+          "subject": "Last chance to treat yourself to bonus points!",
+          "from": "\"Amtrak Guest Rewards\" <amtrak@e-mail.amtrak.com>",
+          "date": "Thu, 26 Feb 2026 12:08:55 -0600",
+          "seen": false
+        },
+        {
+          "uid": "7158",
+          "subject": "This is the new best way to prompt is now LIVE!",
+          "from": "Adam Fard <adam@uxpilot.ai>",
+          "date": "Thu, 26 Feb 2026 16:01:24 +0000",
+          "seen": false
+        },
+        {
+          "uid": "7157",
+          "subject": "For members only: new 제이비[JB] post",
+          "from": "YouTube <noreply@youtube.com>",
+          "date": "Thu, 26 Feb 2026 05:49:02 -0800",
+          "seen": false
+        },
+        {
+          "uid": "7156",
+          "subject": "For members only: new 제이비[JB] post",
+          "from": "YouTube <noreply@youtube.com>",
+          "date": "Thu, 26 Feb 2026 05:48:18 -0800",
+          "seen": false
+        },
+        {
+          "uid": "7155",
+          "subject": "[결제 변경사항] 2026년 3월 말부터 적용되는 Google Cloud 콘솔 권한 변경사항",
+          "from": "Google Cloud <CloudPlatform-noreply@google.com>",
+          "date": "Thu, 26 Feb 2026 05:30:04 -0800",
+          "seen": false
+        },
+        {
+          "uid": "7154",
+          "subject": "Obligatory Spanish reminder",
+          "from": "Duolingo <hello@duolingo.com>",
+          "date": "Thu, 26 Feb 2026 10:08:48 +0000",
+          "seen": false
+        },
+        {
+          "uid": "7153",
+          "subject": "Re: 평택 주한미군 행사 견적 요청의 건",
+          "from": "주진형(Chief파트너) - 객실판촉(강남) <ricky.choo@josunpalace.com>",
+          "date": "Thu, 26 Feb 2026 09:03:38 +0000",
+          "seen": false
+        },
+        {
+          "uid": "7152",
+          "subject": "Gucciheon 님, 넷플릭스의 공개 예정작을 소개합니다",
+          "from": "Netflix <info@members.netflix.com>",
+          "date": "Thu, 26 Feb 2026 08:18:27 +0000",
+          "seen": false
+        }
+      ],
+      "meta": {
+        "total_messages": 237,
+        "unseen_count": 10
+      }
+    }
+  ]
+}
